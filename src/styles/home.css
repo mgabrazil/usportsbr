@@ -8,18 +8,18 @@
         position: relative;
         top: -220px;
         left: -20px;
-        height: 65vw;
+        height: 57vw;
     }
 }
 
 .title{
     & {
-        font-size: 22px;
+        font-size: 45px;
     }
     & .title-top{
         width: fit-content;
         background-color: #f9b734;
-        margin-bottom: 8px;
+        margin-bottom: 15px;
         padding: 2px 5px;
     }
     & .title-bottom{
@@ -29,17 +29,52 @@
 }
 
 .phrase-container {
-    margin-top: 20px;
-    width: 260px;
-    font-size: 17px;
+    margin-top: 35px;
+    width: fit-content;
+    font-size: 36px;
 }
 
-h2 {
+.btn-price {
+    text-decoration: none;
+    color: white;
     display: flex;
     align-items: center;
-    margin-top: 60px;
-    font-size: 18px;
+    margin-top: 140px;
+    font-size: 28px;
     background-color: #f9b734;
-    padding: 5px;
+    padding: 5px 25px;
+    font-weight: 900;
 }
 
+@media screen and (max-width: 1280px){
+    .body-container{
+        & {
+
+        }
+        & .tshirt img{
+            top: -120px;
+            left: -0px;
+            height: 62vw;
+        }
+    }
+
+    .title{
+        & {
+            font-size: 30px;
+        }
+        & .title-top{
+            margin-bottom: 12px;
+            padding: 2px 6px;
+        }
+    }
+
+    .phrase-container {
+        margin-top: 30px;
+        font-size: 28px;
+    }
+
+    .btn-price {
+        margin-top: 100px;
+        font-size: 20px;
+    }
+}
