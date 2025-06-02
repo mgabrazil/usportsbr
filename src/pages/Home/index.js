@@ -1,28 +1,35 @@
+import logo from '../../assets/img-logo.png';
+import shirt from '../../assets/img-tshirt.png';
+
+import '../../styles/home.css';
+
 function Home(){
     
     return(
         
         <section className="container">
-            <div>
-                <div className="logo-container">
-                    <img src="#" className="logo" />
+
+            <main>
+                <div className='body-container'>
+                    <div className='tshirt'>
+                        <img src={shirt} />
+                    </div>
+
+                    <div className='text-container'>
+                        <div className='title'>
+                            <h1 className='title-top'>SEU TIME,</h1>
+                            <h1 className='title-bottom'>SUA IDENTIDADE</h1>
+                        </div>
+
+                        <div className='phrase-container'>
+                            <p>Uniformes personalizados </p>
+                            <p>com qualidade e entrega rápida</p>
+                        </div>
+
+                        <h2>CLIQUE AQUI E FAÇA SEU ORÇAMENTO</h2>
+                    </div>
                 </div>
-
-                <div className="menu-container">
-                    <span>Tecidos</span>
-                    <span>Fabricacao</span>
-                    <span>Design</span>
-                </div>
-
-                <div>
-                    <span class="material-symbols-outlined">search</span>
-
-                    <span>Parceiros</span>
-                    <span class="material-symbols-outlined">arrow_drop_down</span>
-                </div>
-            </div>
-
-            
+            </main>
 
         </section>
     )
