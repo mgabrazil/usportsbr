@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import manImg from '../../assets/img-man.png';
 import womanImg from '../../assets/img-woman.png';
