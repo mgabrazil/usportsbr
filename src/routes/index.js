@@ -9,7 +9,7 @@ export default function RoutesApp(){
     return(
         <Routes>
             <Route path='/' element={ <Home/> } />
-            <Route path='/fabricacao' element={ <Tecidos/> } />
+            <Route path='/tecidos' element={ <Tecidos/> } />
             <Route path='/fabricacao' element={ <Fabricacao/> } />
             <Route path='/design' element={ <Design/> } />
         </Routes>
