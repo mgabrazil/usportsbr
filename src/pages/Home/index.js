@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import logo from '../../assets/img-logo.png';
 import shirt from '../../assets/img-tshirt.png';
 
@@ -26,7 +28,7 @@ function Home(){
                             <p>com qualidade e entrega rápida</p>
                         </div>
 
-                        <h2>CLIQUE AQUI E FAÇA SEU ORÇAMENTO</h2>
+                        <Link to='#' className='btn-price'>CLIQUE AQUI E FAÇA SEU ORÇAMENTO</Link>
                     </div>
                 </div>
             </main>
