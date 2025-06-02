@@ -13,7 +13,7 @@ export default function Header(){
                 </div>
 
                 <div className="menu-container">
-                    <Link to='#'>Tecidos<span class="material-symbols-outlined">arrow_drop_down</span></Link>
+                    <Link to='/tecidos'>Tecidos<span class="material-symbols-outlined">arrow_drop_down</span></Link>
                     <Link to='/fabricacao'>Fabricação<span class="material-symbols-outlined">arrow_drop_down</span></Link>
                     <Link to='/design'>Design<span class="material-symbols-outlined">arrow_drop_down</span></Link>
                 </div>
