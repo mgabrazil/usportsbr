@@ -46,6 +46,7 @@ header {
         color: #f9b734;
         font-size: 65px;
         margin-right: 50px;
+        cursor: pointer;
     }
     & .partners-container{
         display: flex;
@@ -57,6 +58,7 @@ header {
         padding: 15px 33px;
         font-size: 24px;
         color: #1D1D1B;
+        cursor: pointer;
     }
     & #partnersArrow{
         font-size: 60px;

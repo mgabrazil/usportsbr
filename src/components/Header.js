@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import logo from '../assets/img-logo.png';
 
@@ -8,13 +9,13 @@ export default function Header(){
     return(
             <header className="header">
                 <div className="logo-container">
-                    <img src={logo} className="logo" />
+                    <Link to='/'><img src={logo} className="logo" /></Link>
                 </div>
 
                 <div className="menu-container">
-                    <a href="#">Tecidos<span class="material-symbols-outlined">arrow_drop_down</span></a>
-                    <a href="#">Fabricação<span class="material-symbols-outlined">arrow_drop_down</span></a>
-                    <a href="#">Design<span class="material-symbols-outlined">arrow_drop_down</span></a>
+                    <Link to='#'>Tecidos<span class="material-symbols-outlined">arrow_drop_down</span></Link>
+                    <Link to='/fabricacao'>Fabricação<span class="material-symbols-outlined">arrow_drop_down</span></Link>
+                    <Link to='/design'>Design<span class="material-symbols-outlined">arrow_drop_down</span></Link>
                 </div>
 
                 <div className='search-and-partners'>
