@@ -6,7 +6,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-top: 15px;
-    padding: 20px;
+    padding: 50px;
     color: #F7F6F5;
     text-transform: uppercase;
     font-family: sans-serif;
@@ -15,14 +15,23 @@ header {
 
 .logo{
     height: 60px;
+    padding-left: 20px;
 }
 
 .menu-container{
     & {
-        font-size: 17px;
+        font-size: 32px;
+    }
+    & a {
+        color: white;
+        text-decoration: none;
+        margin: 0px 20px;
     }
     & span {
-        margin: 0px 20px;
+        position: relative;
+        top: 20px;
+        font-size: 60px;
+        color: #f9b734;
     }
 }
 
@@ -35,15 +44,21 @@ header {
     & .search{
         display: flex;
         color: #f9b734;
-        font-size: 36px;
-        margin-right: 20px;
+        font-size: 65px;
+        margin-right: 50px;
     }
     & .partners-container{
         display: flex;
+        justify-content: center;
         align-items: center;
+        height: 50px;
+        width: 200px;
         background-color: #f9b734;
-        padding: 15px 20px;
-        font-size: 14px;
+        padding: 15px 33px;
+        font-size: 24px;
         color: #1D1D1B;
+    }
+    & #partnersArrow{
+        font-size: 60px;
     }
 }

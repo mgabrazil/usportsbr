@@ -8,21 +8,21 @@ export default function Header(){
     return(
             <header className="header">
                 <div className="logo-container">
-                        <img src={logo} className="logo" />
-                    </div>
+                    <img src={logo} className="logo" />
+                </div>
 
-                    <div className="menu-container">
-                        <span>Tecidos</span>
-                        <span>Fabricacao</span>
-                        <span>Design</span>
-                    </div>
+                <div className="menu-container">
+                    <a href="#">Tecidos<span class="material-symbols-outlined">arrow_drop_down</span></a>
+                    <a href="#">Fabricação<span class="material-symbols-outlined">arrow_drop_down</span></a>
+                    <a href="#">Design<span class="material-symbols-outlined">arrow_drop_down</span></a>
+                </div>
 
-                    <div className='search-and-partners'>
-                        <span className="material-symbols-outlined search">search</span>
+                <div className='search-and-partners'>
+                    <span className="material-symbols-outlined search">search</span>
 
-                        <div className='partners-container'>
-                            <span className='partners'>Parceiros</span>
-                            <span class="material-symbols-outlined">arrow_drop_down</span>
+                    <div className='partners-container'>
+                        <span className='partners'>Parceiros</span>
+                        <span class="material-symbols-outlined" id="partnersArrow">arrow_drop_down</span>
                     </div>
                 </div>
             </header>
