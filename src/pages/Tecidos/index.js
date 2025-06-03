@@ -1,7 +1,7 @@
 import React from 'react';
-import manImg from '../../assets/img-man.png';
-import womanImg from '../../assets/img-woman.png';
-import whatsappIcon from '../../assets/img-whatsapp.png';
+import imagemHomem from '../../assets/img-man.png';
+import imagemMulher from '../../assets/img-woman.png';
+import iconeWhatsapp from '../../assets/img-whatsapp.png';
 
 import '../../styles/tecidos.css';
 
@@ -9,28 +9,25 @@ function Tecidos() {
   return (
     <section className="tecidos-container">
       <main>
-        <div className="image-layout">
-          {/* Imagem do homem (já com faixa diagonal embutida) */}
-          <div className="man-image">
-            <img src={manImg} alt="Homem usando uniforme" />
+        <div className="container-imagens">
+          <div className="homem">
+            <img src={imagemHomem} alt="Homem usando uniforme" />
           </div>
 
-          {/* Imagem da mulher (já com faixa diagonal embutida) */}
-          <div className="woman-image">
-            <img src={womanImg} alt="Mulher usando uniforme" />
+          <div className="mulher">
+            <img src={imagemMulher} alt="Mulher usando uniforme" />
           </div>
         </div>
 
-        <div className="text-section">
-          <h1 className="title-tecidos">DESIGN EXCLUSIVO</h1>
-          <p className="subtitle-tecidos">
+        <div className="caixa-texto">
+          <h1 className="titulo">DESIGN EXCLUSIVO</h1>
+          <p className="subtitulo">
             Entre em contato com a nossa equipe.
           </p>
         </div>
 
-        {/* Ícone do WhatsApp no canto inferior direito */}
-        <div className="whatsapp-button">
-          <img src={whatsappIcon} alt="WhatsApp" />
+        <div className="botao-whatsapp">
+          <img src={iconeWhatsapp} alt="WhatsApp" />
         </div>
       </main>
     </section>
@@ -38,4 +35,3 @@ function Tecidos() {
 }
 
 export default Tecidos;
-

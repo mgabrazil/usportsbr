@@ -9,6 +9,7 @@
         top: -220px;
         left: -20px;
         height: 57vw;
+        animation: float 3s ease-in-out infinite;
     }
 }
 
@@ -77,4 +78,16 @@
         margin-top: 100px;
         font-size: 20px;
     }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
