@@ -9,11 +9,12 @@ export default function Header(){
     
     const [showSearch, setShowSearch] = useState(false);
     const [userSearch, setUserSearch] = useState('');
+    const [showPartners, setShowPartners] = useState(false);
 
     const navigate = useNavigate();
 
     function Search(){
-        setShowSearch(prev => !prev)
+        setShowSearch(prev => !prev);
     }
 
     function searchKeydown(e){
@@ -21,6 +22,10 @@ export default function Header(){
             navigate(`/search?q=${encodeURIComponent(userSearch.trim())}`);
             setUserSearch('');
         }
+    }
+
+    function showPartnersBtn(){
+        setShowPartners(prev => !prev);
     }
 
     return(
@@ -55,12 +60,24 @@ export default function Header(){
                         <span className="material-symbols-outlined search" id="search-btn" onClick={Search}>search</span>
                     )}
 
-
                     <div className='partners-container'>
-                        <span className='partners'>Parceiros</span>
-                        <span class="material-symbols-outlined" id="partnersArrow">arrow_drop_down</span>
+                        <div className='partners-btn' onClick={showPartnersBtn}>
+                            <span className='partners'>Parceiros</span>
+                            <span class="material-symbols-outlined" id="partnersArrow">arrow_drop_down</span>
+                        </div>
+
+                        {showPartners && (
+                                <div className="partners-list">
+                                    <span className="partners-item">ADEF</span>
+                                    <span className="partners-item">CBFS</span>
+                                    <span className="partners-item">SUB 17</span>
+                                    <span className="partners-lastitem">LFF</span>
+                                </div>
+                            )}
                     </div>
+
                 </div>
+
             </header>
     );
 }
