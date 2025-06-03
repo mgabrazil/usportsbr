@@ -9,28 +9,31 @@ function Home(){
     
     return(
         
-        <section className="container">
+        <section className="home-container">
 
-            <main>
-                <div className='body-container'>
-                    <div className='tshirt'>
-                        <img src={shirt} />
-                    </div>
+            <span className="material-symbols-outlined" id="left-arrow">double_arrow</span>
+            <span className="material-symbols-outlined" id="right-arrow">double_arrow</span>
 
-                    <div className='text-container'>
-                        <div className='title'>
-                            <h1 className='title-top'>SEU TIME,</h1>
-                            <h1 className='title-bottom'>SUA IDENTIDADE</h1>
-                        </div>
+            <main className='body-container'>
 
-                        <div className='phrase-container'>
-                            <p>Uniformes personalizados </p>
-                            <p>com qualidade e entrega rápida</p>
-                        </div>
-
-                        <Link to='#' className='btn-price'>CLIQUE AQUI E FAÇA SEU ORÇAMENTO</Link>
-                    </div>
+                <div className='tshirt'>
+                    <img src={shirt} />
                 </div>
+
+                <div className='text-container'>
+                    <div className='title'>
+                        <h1 className='title-top'>SEU TIME,</h1>
+                        <h1 className='title-bottom'>SUA IDENTIDADE</h1>
+                    </div>
+
+                    <div className='phrase-container'>
+                        <p>Uniformes personalizados </p>
+                        <p>com qualidade e entrega rápida</p>
+                    </div>
+
+                    <Link to='#' className='btn-price'>CLIQUE AQUI E FAÇA SEU ORÇAMENTO</Link>
+                </div>
+
             </main>
 
         </section>

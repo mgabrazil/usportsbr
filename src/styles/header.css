@@ -65,6 +65,10 @@ header {
         font-size: 24px;
         color: #1D1D1B;
         cursor: pointer;
+        transition: background-color 0.2 ease;
+    }
+    & .partners-container:hover{
+        background-color: #f3ae23;
     }
     & #partnersArrow{
         font-size: 60px;
@@ -101,7 +105,7 @@ header {
         }
         & .partners-container{
             height: 40px;
-            width: 150px;
+            width: fit-content;
             padding: 10px 25px;
             font-size: 20px;
         }

@@ -4,8 +4,10 @@
 }
 
 body, html {
-  background-image: linear-gradient(#1D1D1B, #f9b734);
+  position: relative;
+  background: linear-gradient(to bottom, #1D1D1B 32%, #f9b734 110%);
   background-repeat: no-repeat;
+  background-attachment: fixed; /* importante */
   height: 100%;
   width: 100%;
   color: #F7F6F5;
