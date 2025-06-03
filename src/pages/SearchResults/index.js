@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 
 import products from '../../data/products';
 
+import '../../styles/searchResults.css';
+
 export default function SearchResults(){
     
     const location = useLocation();
@@ -16,7 +18,7 @@ export default function SearchResults(){
     );
 
     return (
-        <div>
+        <div className="search-results-container">
             <h2>Resultado da busca:</h2>
 
             {query === "" ? (

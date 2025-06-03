@@ -19,6 +19,7 @@ export default function Header(){
     function searchKeydown(e){
         if (e.key === 'Enter' && userSearch.trim() != ''){
             navigate(`/search?q=${encodeURIComponent(userSearch.trim())}`);
+            setUserSearch('');
         }
     }
 
@@ -41,14 +42,18 @@ export default function Header(){
                             id="searchInput"
                             type="text"
                             placeholder="Buscar..."
-                            className="seach-input"
+                            className="search-input"
                             value={userSearch}
                             onChange={(e) => setUserSearch(e.target.value)}
                             onKeyDown={searchKeydown}
                         />
                     )}
 
-                    <span className="material-symbols-outlined search" id="search-btn" onClick={Search}>search</span>
+                    {showSearch ? (
+                        <span className="material-symbols-outlined close" id="search-btn" onClick={Search}>close</span>
+                    ) : (
+                        <span className="material-symbols-outlined search" id="search-btn" onClick={Search}>search</span>
+                    )}
 
 
                     <div className='partners-container'>
