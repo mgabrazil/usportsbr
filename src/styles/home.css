@@ -3,13 +3,13 @@
         position: relative;
         display: flex;
         align-items: center;
-        height: 100vh;
+        height: 98vh;
         width: 100vw;
         overflow: hidden;
     }
     & .tshirt img{
         position: relative;
-        top: -220px;
+        top: -120px;
         left: -20px;
         height: 57vw;
         animation: float 3s ease-in-out infinite;
@@ -62,7 +62,7 @@
         font-size: 60px;
         display: flex;
         align-items: center;
-        height: 100%;
+        height: 95%;
         transform: rotate(180deg);
         cursor: pointer;
         z-index: 10;
@@ -79,7 +79,7 @@
         font-size: 60px;
         display: flex;
         align-items: center;
-        height: 100%;
+        height: 95%;
         right: 0%;
         cursor: pointer;
         z-index: 10;

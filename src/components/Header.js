@@ -35,9 +35,9 @@ export default function Header(){
                 </div>
 
                 <div className="menu-container">
-                    <Link to='/tecidos'>Tecidos<span class="material-symbols-outlined">arrow_drop_down</span></Link>
-                    <Link to='/fabricacao'>Fabricação<span class="material-symbols-outlined">arrow_drop_down</span></Link>
-                    <Link to='/design'>Design<span class="material-symbols-outlined">arrow_drop_down</span></Link>
+                    <Link to='/tecidos'>Tecidos<span className="material-symbols-outlined">arrow_drop_down</span></Link>
+                    <Link to='/fabricacao'>Fabricação<span className="material-symbols-outlined">arrow_drop_down</span></Link>
+                    <Link to='/design'>Design<span className="material-symbols-outlined">arrow_drop_down</span></Link>
                 </div>
 
                 <div className='search-and-partners'>
@@ -63,7 +63,7 @@ export default function Header(){
                     <div className='partners-container'>
                         <div className='partners-btn' onClick={showPartnersBtn}>
                             <span className='partners'>Parceiros</span>
-                            <span class="material-symbols-outlined" id="partnersArrow">arrow_drop_down</span>
+                            <span className="material-symbols-outlined" id="partnersArrow">arrow_drop_down</span>
                         </div>
 
                         {showPartners && (
