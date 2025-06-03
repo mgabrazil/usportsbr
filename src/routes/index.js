@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 import Fabricacao from '../pages/Fabricacao';
 import Design from '../pages/Design';
 import Tecidos from '../pages/Tecidos';
+import SearchResults from '../pages/SearchResults';
 
 export default function RoutesApp(){
     return(
@@ -12,6 +13,8 @@ export default function RoutesApp(){
             <Route path='/tecidos' element={ <Tecidos/> } />
             <Route path='/fabricacao' element={ <Fabricacao/> } />
             <Route path='/design' element={ <Design/> } />
+
+            <Route path='/search' element={ <SearchResults/> } />
         </Routes>
     )
 }

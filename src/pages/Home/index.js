@@ -1,12 +1,12 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../../assets/img-logo.png';
 import shirt from '../../assets/img-tshirt.png';
 
 import '../../styles/home.css';
 
 function Home(){
-    
+
     return(
         
         <section className="home-container">

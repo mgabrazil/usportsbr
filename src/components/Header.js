@@ -1,11 +1,27 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, {useState} from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import logo from '../assets/img-logo.png';
 
 import '../styles/header.css';
 
 export default function Header(){
+    
+    const [showSearch, setShowSearch] = useState(false);
+    const [userSearch, setUserSearch] = useState('');
+
+    const navigate = useNavigate();
+
+    function Search(){
+        setShowSearch(prev => !prev)
+    }
+
+    function searchKeydown(e){
+        if (e.key === 'Enter' && userSearch.trim() != ''){
+            navigate(`/search?q=${encodeURIComponent(userSearch.trim())}`);
+        }
+    }
+
     return(
             <header className="header">
                 <div className="logo-container">
@@ -19,7 +35,21 @@ export default function Header(){
                 </div>
 
                 <div className='search-and-partners'>
-                    <span className="material-symbols-outlined search">search</span>
+
+                    {showSearch && (
+                        <input 
+                            id="searchInput"
+                            type="text"
+                            placeholder="Buscar..."
+                            className="seach-input"
+                            value={userSearch}
+                            onChange={(e) => setUserSearch(e.target.value)}
+                            onKeyDown={searchKeydown}
+                        />
+                    )}
+
+                    <span className="material-symbols-outlined search" id="search-btn" onClick={Search}>search</span>
+
 
                     <div className='partners-container'>
                         <span className='partners'>Parceiros</span>
