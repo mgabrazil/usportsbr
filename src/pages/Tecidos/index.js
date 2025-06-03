@@ -11,11 +11,11 @@ function Tecidos() {
       <main>
         <div className="container-imagens">
           <div className="homem">
-            <img src={imagemHomem} alt="Homem usando uniforme" />
+            <img src={imagemHomem} alt="Homem" />
           </div>
 
           <div className="mulher">
-            <img src={imagemMulher} alt="Mulher usando uniforme" />
+            <img src={imagemMulher} alt="Mulher" />
           </div>
         </div>
 
