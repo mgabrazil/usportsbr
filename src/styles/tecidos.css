@@ -40,7 +40,7 @@
 
 .mulher {
   position: relative;
-  right: 7%;
+  right: 5%;
   top: -19vw;
   z-index: 2;
 }
@@ -52,7 +52,7 @@
 
 .caixa-texto {
   position: absolute;
-  right: 8vw;
+  right: 6vw;
   bottom: 5vw;
   text-align: left;
   z-index: 3;
@@ -87,8 +87,45 @@ html, body {
 }
 
 /* =========================================================================
-   2) MEDIA QUERIES — ajustes para telas menores que 1024px
+    QUERIES
    ========================================================================= */
+
+/* -------------------------------------------------------------------------
+  2.0) Outros - Desktop/Notebook (largura ≤ 1280px)
+  ------------------------------------------------------------------------- */
+
+@media (max-width: 1280px) {
+  .homem {
+    top: 8%;
+    left: -23%;
+  }
+  .homem img {
+    width: 100vw;
+  }
+
+  .mulher {
+    top: -40%;
+    right: 15%;
+  }
+  .mulher img {
+    width: 130vw;
+  }
+
+  .caixa-texto {
+    right: 8vw;
+    bottom: 4vw;
+  }
+  .titulo {
+    font-size: 2.8vw;
+    padding: 6px 4px;
+  }
+  .subtitulo {
+    font-size: 1.3rem;
+  }
+}
+
+
+
 
 /* -------------------------------------------------------------------------
    2.1) Tablet / telas médias (largura ≤ 1024px)
@@ -130,28 +167,28 @@ html, body {
   .homem {
     position: absolute;
     top: 10%;
-    left: 50%;
+    left: 35%;
     transform: translateX(-50%);
   }
   .homem img {
-    width: 75vw;
+    width: 150vw;
   }
 
   .mulher {
     position: absolute;
-    top: 45%;
-    left: 50%;
+    top: -20%;
+    left: 70%;
     transform: translateX(-50%);
     right: auto;
   }
   .mulher img {
-    width: 70vw;
+    width: 200vw;
   }
 
   .caixa-texto {
     position: absolute;
-    right: 50%;
-    bottom: 8vh;
+    right: 65%;
+    bottom: 5%;
     transform: translateX(50%);
     width: 90%;
     text-align: center;
@@ -170,28 +207,28 @@ html, body {
    ------------------------------------------------------------------------- */
 @media (max-width: 480px) {
   .homem {
-    top: 12%;
-    left: 50%;
+    top: 20%;
+    left: 35%;
     transform: translateX(-50%);
   }
   .homem img {
-    width: 90vw;
+    width: 180vw;
   }
 
   .mulher {
     position: absolute;
-    top: 52%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: -15%;
+    left: -40%;
+    transform: rotate(-10deg);
   }
   .mulher img {
-    width: 85vw;
+    width: 220vw;
   }
 
   .caixa-texto {
     position: absolute;
-    right: 50%;
-    bottom: 6vh;
+    left: -50%;
+    bottom: 9vh;
     transform: translateX(50%);
     width: 95%;
     text-align: center;
