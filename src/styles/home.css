@@ -8,7 +8,7 @@
         overflow: hidden;
     }
     & .tshirt img{
-        position: relative;
+        position: relative; 
         top: -120px;
         left: -20px;
         height: 57vw;
