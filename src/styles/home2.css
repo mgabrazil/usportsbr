@@ -215,25 +215,28 @@ html, body {
     font-size: 3.5vw;
   }
 }
-
+/*
 @media (max-width: 480px) {
-  .homem {
-    top: 20%;
-    left: 35%;
-    transform: translateX(-50%);
-  }
-  .homem img {
-    width: 180vw;
+  .container-imagens {
+    overflow: visible;
   }
 
-  .mulher {
-    position: absolute;
-    top: -15%;
-    left: -40%;
-    transform: rotate(-10deg);
+  .homem {
+    display: none;
   }
-  .mulher img {
-    width: 220vw;
+  .mulher {
+    display: none;
+  }
+
+  .homem-mulher {
+    position: absolute;
+    height: auto;
+    z-index: 2;
+  }
+  .homem-mulher img {
+    display: block;
+    width: 100vw;
+    height: auto;
   }
 
   .caixa-texto {
@@ -252,3 +255,4 @@ html, body {
     font-size: 4vw;
   }
 }
+
