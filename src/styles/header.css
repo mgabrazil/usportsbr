@@ -123,6 +123,8 @@ header {
         color: #1D1D1B;
     }
     & .partners-item{
+        color: #1D1D1B;
+        text-decoration: none;
         border-bottom: 1px solid rgb(201, 201, 201);
         width: 80px;
         text-align: center;
@@ -130,6 +132,8 @@ header {
         cursor: pointer;
     }
     & .partners-lastitem{
+        color: #1D1D1B;
+        text-decoration: none;
         width: 80px;
         text-align: center;
         padding: 10px 15px 5px 15px;

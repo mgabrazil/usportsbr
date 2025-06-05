@@ -68,10 +68,10 @@ export default function Header(){
 
                         {showPartners && (
                                 <div className="partners-list">
-                                    <span className="partners-item">ADEF</span>
-                                    <span className="partners-item">CBFS</span>
-                                    <span className="partners-item">SUB 17</span>
-                                    <span className="partners-lastitem">LFF</span>
+                                    <Link to="/adef" className="partners-item">ADEF</Link>
+                                    <Link to="/cbfs" className="partners-item">CBFS</Link>
+                                    <Link to="/sub17" className="partners-item">SUB 17</Link>
+                                    <Link to="/lff" className="partners-lastitem">LFF</Link>
                                 </div>
                             )}
                     </div>
