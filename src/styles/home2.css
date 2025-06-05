@@ -110,7 +110,7 @@ html, body {
 @media (max-width: 1280px) {
   .homem {
     top: 5%;
-    left: -13%;
+    left: -25%;
   }
   .homem img {
     width: 100vw;
@@ -118,15 +118,15 @@ html, body {
 
   .mulher {
     top: -38vw;
-    right: 23%;
+    right: 45%;
   }
   .mulher img {
     width: 200vw;
   }
 
   .caixa-texto {
-    right: 8vw;
-    bottom: 12vw;
+    right: 3vw;
+    bottom: 8vw;
   }
   .titulo {
     font-size: 2.8vw;
@@ -215,30 +215,28 @@ html, body {
     font-size: 3.5vw;
   }
 }
-/*
+
 @media (max-width: 480px) {
-  .container-imagens {
-    overflow: visible;
-  }
-
   .homem {
-    display: none;
+    top: 20%;
+    left: 35%;
+    transform: translateX(-50%);
   }
+  .homem img {
+    width: 0vw;
+  }
+
   .mulher {
-    display: none;
-  }
-
-  .homem-mulher {
     position: absolute;
-    height: auto;
-    z-index: 2;
+    top: -15%;
+    left: -40%;
+    transform: rotate(-10deg);
   }
-  .homem-mulher img {
-    display: block;
-    width: 100vw;
-    height: auto;
+  .mulher img {
+    width: 0vw;
   }
 
+  
   .caixa-texto {
     position: absolute;
     left: -50%;
@@ -255,4 +253,3 @@ html, body {
     font-size: 4vw;
   }
 }
-
