@@ -1,4 +1,4 @@
-
+/* src/styles/home2.css */
 .home-container-base {
   position: relative;
   width: 100vw;
@@ -17,14 +17,14 @@
   position: relative;
 }
 
-.tecidos-container {
+.home2-container {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
-.tecidos-container main {
+.home2-container main {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -33,9 +33,9 @@
   overflow: hidden;
 }
 
-.tecidos-container *,
-.tecidos-container *::before,
-.tecidos-container *::after {
+.home2-container *,
+.home2-container *::before,
+.home2-container *::after {
   box-sizing: border-box;
 }
 
