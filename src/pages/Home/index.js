@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 import shirt from '../../assets/img-tshirt.png';
 import imagemHomem from '../../assets/img-man.png';
-import imagemMulher from '../../assets/img-woman.png';
+import imagemMulher from '../../assets/img-woman-fita.png';
 
 import '../../styles/home2.css';
 import '../../styles/home.css';
@@ -17,7 +17,7 @@ function Home(){
     useEffect(() => {
         const timer = setTimeout(() => {
             setCurrentPage(prev => (prev === 1 ? 2 : 1));
-        }, 5000);
+        }, 10000000);
 
         return () => clearTimeout(timer);
     }, [currentPage]);

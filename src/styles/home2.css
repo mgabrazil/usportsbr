@@ -11,6 +11,7 @@
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .tecidos-container *,
@@ -28,8 +29,8 @@
 
 .homem {
   position: absolute;
-  top: 6%;
-  left: -13%;
+  top: 3.5%;
+  left: -10%;
   z-index: 2;
 }
 .homem img {
@@ -40,13 +41,13 @@
 
 .mulher {
   position: relative;
-  right: -4.5%;
-  top: -17vw;
+  right: 15%;
+  top: -30vw;
   z-index: 2;
 }
 .mulher img {
   display: block;
-  width: 100%;
+  width: 155vw;
   height: auto;
 }
 
@@ -84,6 +85,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden; /* <<< ADICIONADO para remover a scroll vertical */
 }
 
 /* =========================================================================
@@ -93,22 +95,21 @@ html, body {
 /* -------------------------------------------------------------------------
   2.0) Outros - Desktop/Notebook (largura ≤ 1280px)
   ------------------------------------------------------------------------- */
-
 @media (max-width: 1280px) {
   .homem {
-    top: 8%;
-    left: -23%;
+    top: 3%;
+    left: -13%;
   }
   .homem img {
     width: 100vw;
   }
 
   .mulher {
-    top: -40%;
-    right: 15%;
+    top: -38vw;
+    right: 23%;
   }
   .mulher img {
-    width: 130vw;
+    width: 200vw;
   }
 
   .caixa-texto {
@@ -123,9 +124,6 @@ html, body {
     font-size: 1.3rem;
   }
 }
-
-
-
 
 /* -------------------------------------------------------------------------
    2.1) Tablet / telas médias (largura ≤ 1024px)
