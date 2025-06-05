@@ -41,7 +41,7 @@
 
 .mulher {
   position: relative;
-  right: 15%;
+  right: 17%;
   top: -30vw;
   z-index: 2;
 }
@@ -97,7 +97,7 @@ html, body {
   ------------------------------------------------------------------------- */
 @media (max-width: 1280px) {
   .homem {
-    top: 3%;
+    top: 5%;
     left: -13%;
   }
   .homem img {
@@ -114,7 +114,7 @@ html, body {
 
   .caixa-texto {
     right: 8vw;
-    bottom: 4vw;
+    bottom: 12vw;
   }
   .titulo {
     font-size: 2.8vw;
@@ -130,19 +130,20 @@ html, body {
    ------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
   .homem {
-    top: 8%;
-    left: -12%;
+    top: 10vw;
+    left: -16%;
+    position: relative;
   }
   .homem img {
-    width: 65vw;
+    width: 130vw;
   }
 
   .mulher {
-    top: -17vw;
-    right: 5%;
+    top: -139vw;
+    right: 26%;
   }
   .mulher img {
-    width: 90%;
+    width: 250vw;
   }
 
   .caixa-texto {
@@ -155,6 +156,15 @@ html, body {
   }
   .subtitulo {
     font-size: 1.3rem;
+  }
+
+  .caixa-texto {
+    position: absolute;
+    right: 65%;
+    bottom: 19%;
+    transform: translateX(135%);
+    width: 85%;
+    text-align: left;
   }
 }
 
