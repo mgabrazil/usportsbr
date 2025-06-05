@@ -1,3 +1,22 @@
+
+.home-container-base {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 200vw;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100vw;
+  flex-shrink: 0;
+  position: relative;
+}
+
 .tecidos-container {
   position: relative;
   width: 100vw;
@@ -85,16 +104,9 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden; /* <<< ADICIONADO para remover a scroll vertical */
+  overflow-y: hidden;
 }
 
-/* =========================================================================
-    QUERIES
-   ========================================================================= */
-
-/* -------------------------------------------------------------------------
-  2.0) Outros - Desktop/Notebook (largura ≤ 1280px)
-  ------------------------------------------------------------------------- */
 @media (max-width: 1280px) {
   .homem {
     top: 5%;
@@ -125,9 +137,6 @@ html, body {
   }
 }
 
-/* -------------------------------------------------------------------------
-   2.1) Tablet / telas médias (largura ≤ 1024px)
-   ------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
   .homem {
     top: 10vw;
@@ -168,9 +177,6 @@ html, body {
   }
 }
 
-/* -------------------------------------------------------------------------
-   2.2) Smartphone maior (largura ≤ 768px)
-   ------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   .homem {
     position: absolute;
@@ -210,9 +216,6 @@ html, body {
   }
 }
 
-/* -------------------------------------------------------------------------
-   2.3) Smartphone pequeno (largura ≤ 480px)
-   ------------------------------------------------------------------------- */
 @media (max-width: 480px) {
   .homem {
     top: 20%;
