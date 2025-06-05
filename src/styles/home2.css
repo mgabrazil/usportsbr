@@ -1,21 +1,41 @@
-.tecidos-container {
+/* src/styles/home2.css */
+.home-container-base {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 200vw;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100vw;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.home2-container {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
-.tecidos-container main {
+.home2-container main {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
-.tecidos-container *,
-.tecidos-container *::before,
-.tecidos-container *::after {
+.home2-container *,
+.home2-container *::before,
+.home2-container *::after {
   box-sizing: border-box;
 }
 
@@ -28,8 +48,8 @@
 
 .homem {
   position: absolute;
-  top: 6%;
-  left: -13%;
+  top: 3.5%;
+  left: -10%;
   z-index: 2;
 }
 .homem img {
@@ -40,13 +60,13 @@
 
 .mulher {
   position: relative;
-  right: -4.5%;
-  top: -17vw;
+  right: 17%;
+  top: -30vw;
   z-index: 2;
 }
 .mulher img {
   display: block;
-  width: 100%;
+  width: 155vw;
   height: auto;
 }
 
@@ -84,36 +104,29 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
-
-/* =========================================================================
-    QUERIES
-   ========================================================================= */
-
-/* -------------------------------------------------------------------------
-  2.0) Outros - Desktop/Notebook (largura ≤ 1280px)
-  ------------------------------------------------------------------------- */
 
 @media (max-width: 1280px) {
   .homem {
-    top: 8%;
-    left: -23%;
+    top: 5%;
+    left: -13%;
   }
   .homem img {
     width: 100vw;
   }
 
   .mulher {
-    top: -40%;
-    right: 15%;
+    top: -38vw;
+    right: 23%;
   }
   .mulher img {
-    width: 130vw;
+    width: 200vw;
   }
 
   .caixa-texto {
     right: 8vw;
-    bottom: 4vw;
+    bottom: 12vw;
   }
   .titulo {
     font-size: 2.8vw;
@@ -124,27 +137,22 @@ html, body {
   }
 }
 
-
-
-
-/* -------------------------------------------------------------------------
-   2.1) Tablet / telas médias (largura ≤ 1024px)
-   ------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
   .homem {
-    top: 8%;
-    left: -12%;
+    top: 10vw;
+    left: -16%;
+    position: relative;
   }
   .homem img {
-    width: 65vw;
+    width: 130vw;
   }
 
   .mulher {
-    top: -17vw;
-    right: 5%;
+    top: -139vw;
+    right: 26%;
   }
   .mulher img {
-    width: 90%;
+    width: 250vw;
   }
 
   .caixa-texto {
@@ -158,11 +166,17 @@ html, body {
   .subtitulo {
     font-size: 1.3rem;
   }
+
+  .caixa-texto {
+    position: absolute;
+    right: 65%;
+    bottom: 19%;
+    transform: translateX(135%);
+    width: 85%;
+    text-align: left;
+  }
 }
 
-/* -------------------------------------------------------------------------
-   2.2) Smartphone maior (largura ≤ 768px)
-   ------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   .homem {
     position: absolute;
@@ -202,9 +216,6 @@ html, body {
   }
 }
 
-/* -------------------------------------------------------------------------
-   2.3) Smartphone pequeno (largura ≤ 480px)
-   ------------------------------------------------------------------------- */
 @media (max-width: 480px) {
   .homem {
     top: 20%;

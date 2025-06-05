@@ -1,3 +1,4 @@
+
 .body-container{
     & {
         position: relative;
@@ -62,7 +63,7 @@
         font-size: 60px;
         display: flex;
         align-items: center;
-        height: 95%;
+        height: 100%;
         transform: rotate(180deg);
         cursor: pointer;
         z-index: 10;
@@ -79,7 +80,7 @@
         font-size: 60px;
         display: flex;
         align-items: center;
-        height: 95%;
+        height: 100%;
         right: 0%;
         cursor: pointer;
         z-index: 10;
@@ -92,9 +93,8 @@
 
 @media screen and (max-width: 1280px){
     .body-container{
-        & {
+        & {}
 
-        }
         & .tshirt img{
             top: -120px;
             left: -0px;
