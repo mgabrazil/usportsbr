@@ -156,7 +156,7 @@ header {
 }
 
 /* TELAS ATE 1280px */
-@media screen and (max-width: 1280px){
+@media screen and (min-width: 1150px) and (max-width: 1500px){
 
     .logo{
     height: 45px;
@@ -214,19 +214,75 @@ header {
     }
 
     @keyframes showSearch {
-    0% {
-        width: 0;
-        height: 3ch;
-    }
-    100% {
-        width: 600px;
-        height: 3ch;
+        0% {
+            width: 0;
+            height: 3ch;
+        }
+        100% {
+            width: 600px;
+            height: 3ch;
+        }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1150px){
+    header {
+        margin-top: 70px;
+        padding: 30px;
+    }
+    .logo{
+        height: 45px;
+        padding-left: 0px;
+    }
+
+    .menu-container{
+        & {
+            margin-left: 20px;
+            font-size: 24px;
+        }
+        & a {
+            margin: 0px 10px;
+        }
+        & span {
+            font-size: 40px;
+        }
+    }
+    .search-and-partners {
+        & {
+            display: flex;
+        }
+        & .search{
+            display: none;
+        }
+        .search-input{
+            display: none;
+        }
+        & .close{
+            display: none;
+        }
+    }
+    .partners-container{
+        & {
+
+        }
+        & .partners-btn{
+            width: fit-content;
+            padding: 5px 0px 5px 10px;
+            font-size: 19px;
+        }
+        & #partnersArrow{
+            font-size: 50px;
+        }
+        & .partners-list{
+            top: 104px;
+            width: 130px;
+            padding: 50px 33px;
+        }
+    }
 }
 
 /* TELAS CELULARES */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 996px) {
     header {
         width: 100vw;
         flex-direction: column;
