@@ -70,6 +70,23 @@
   height: auto;
 }
 
+/* Por padrão, a div .homem-mulher fica escondida */
+.homem-mulher {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.homem-mulher img {
+  width: 100vw;
+  height: auto;
+}
+
 .caixa-texto {
   position: absolute;
   right: 6vw;
@@ -98,7 +115,8 @@
   line-height: 1.3;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -106,6 +124,8 @@ html, body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
+/* === Breakpoints intermediários (1280px, 1024px, 768px) sem alteração na .homem-mulher === */
 
 @media (max-width: 1280px) {
   .homem {
@@ -216,40 +236,117 @@ html, body {
   }
 }
 
+
+/* ================================================ */
+/* === MODO CELULAR (até 480px) === */
 @media (max-width: 480px) {
-  .homem {
-    top: 20%;
-    left: 35%;
-    transform: translateX(-50%);
-  }
   .homem img {
     width: 0vw;
-  }
-
-  .mulher {
-    position: absolute;
-    top: -15%;
-    left: -40%;
-    transform: rotate(-10deg);
   }
   .mulher img {
     width: 0vw;
   }
+  .homem-mulher {
+    display: flex;
+    top: 6%;
+    left: 7vw;
+  }
+  .homem-mulher img {
+    width: 220vw;
+    height: auto;
+    object-fit: cover;
+  }
 
-  
   .caixa-texto {
     position: absolute;
-    left: -50%;
-    bottom: 9vh;
-    transform: translateX(50%);
-    width: 95%;
-    text-align: center;
+    right: 50%;
+    top: 15%;
+    text-align: left;
+    z-index: 3;
   }
   .titulo {
-    font-size: 8vw;
-    padding: 10px 8px;
+    display: inline-block;
+    background-color: #f9b734;
+    padding: 2px 3px;
+    margin-bottom: 0.5rem;
+    font-size: 7vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
   }
   .subtitulo {
-    font-size: 4vw;
+    font-size: 3.9vw;
+    width: 60vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.3;
   }
+
+  .clientes-mobile {
+  display: block;
+  position: absolute;
+  bottom: 14vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 4;
+  text-align: center;
+}
+
+.btn-clientes-mobile {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0 20px 0 20px;
+  padding: 4px 12px;
+  font-size: 4vw;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 5vw;
+}
+
+
+  .logos-clientes {
+    position: absolute;
+    bottom: -118%;
+    left: -20px;
+    width: 110%;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    padding: 2vw 0;
+    z-index: 3;
+  }
+
+  .logo-lff {
+    width: 14.5vw;
+    height: 5vw;
+    object-fit: contain;
+  }
+
+  .logo-cbfs {
+    height: 12vw;
+    object-fit: contain;
+  }
+
+  .logo-adef {
+    height: 12vw;
+    object-fit: contain;
+  }
+
+  .logo-futsal {
+    height: 12vw;
+    object-fit: contain;
+  }
+
+
+  /* Se você quiser, pode também controlar a largura diretamente:
+     .logo-lff { width: 20vw; height: auto; } 
+     etc. Mas é mais comum controlar pela altura em elementos flex, para manter a proporção. */
 }

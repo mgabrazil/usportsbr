@@ -6,6 +6,12 @@ import { useEffect, useState } from 'react';
 import shirt from '../../assets/img-tshirt.png';
 import imagemHomem from '../../assets/img-man.png';
 import imagemMulher from '../../assets/img-woman-fita.png';
+import imagemHomemMulher from '../../assets/img-man-woman.png';
+
+import logoLFF from '../../assets/LFF.png';
+import logoCBFS from '../../assets/CBFS_logo-07.png';
+import logoADEF from '../../assets/ADEF.png';
+import logoFutsal from '../../assets/SUB_17.png';
 
 import '../../styles/home2.css';
 import '../../styles/home.css';
@@ -33,6 +39,7 @@ function Home() {
   return (
     <section className="home-container-base">
       <div className="slider" style={{ transform: sliderTranslate }}>
+        {/* === SLIDE 1 (Home2) === */}
         <section className="home2-container slide">
           <main>
             <span
@@ -49,13 +56,44 @@ function Home() {
               <div className="mulher">
                 <img src={imagemMulher} alt="Mulher" />
               </div>
+              <div className="homem-mulher">
+                <img src={imagemHomemMulher} alt="Homem-Mulher" />
+              </div>
             </div>
             <div className="caixa-texto">
               <h1 className="titulo">DESIGN EXCLUSIVO</h1>
               <p className="subtitulo">Entre em contato com a nossa equipe.</p>
             </div>
+
+            <div className="clientes-mobile">
+              <button className="btn-clientes-mobile">NOSSOS CLIENTES</button>
+              <div className="logos-clientes">
+                <img
+                  className="logo-lff"
+                  src={logoLFF}
+                  alt="LFF"
+                />
+                <img
+                  className="logo-cbfs"
+                  src={logoCBFS}
+                  alt="CBFS"
+                />
+                <img
+                  className="logo-adef"
+                  src={logoADEF}
+                  alt="ADEF"
+                />
+                <img
+                  className="logo-futsal"
+                  src={logoFutsal}
+                  alt="Futsal"
+                />
+              </div>
+            </div>
           </main>
         </section>
+
+        {/* === SLIDE 2 (Home1) === */}
         <section className="home1-container slide">
           <span
             className="material-symbols-outlined"
@@ -73,7 +111,7 @@ function Home() {
           </span>
           <main className="body-container">
             <div className="tshirt">
-              <img src={shirt} />
+              <img src={shirt} alt="T-Shirt" />
             </div>
             <div className="text-container">
               <div className="title">
