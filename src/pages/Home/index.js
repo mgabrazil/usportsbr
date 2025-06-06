@@ -15,7 +15,7 @@ import logoFutsal from '../../assets/SUB_17.png';
 
 import '../../styles/home2.css';
 import '../../styles/home.css';
-import '../../styles/contact.css'; // <<< novo arquivo de estilo para a seção de formulário
+import '../../styles/contact.css'; 
 
 function Home() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -39,10 +39,10 @@ function Home() {
 
   return (
     <>
-      {/* ========== SLIDER (dois slides girando horizontalmente) ========== */}
+    
       <section className="home-container-base">
         <div className="slider" style={{ transform: sliderTranslate }}>
-          {/* === SLIDE 1 (Home2) === */}
+
           <section className="home2-container slide">
             <main>
               <span
@@ -80,7 +80,7 @@ function Home() {
             </main>
           </section>
 
-          {/* === SLIDE 2 (Home1) === */}
+
           <section className="home1-container slide">
             <span
               className="material-symbols-outlined"
@@ -128,7 +128,7 @@ function Home() {
         </div>
       </section>
 
-      {/* ======== NOVA SEÇÃO: FORMULÁRIO DE CONTATO (scroll abaixo do slider) ======== */}
+
       <section className="contact-section">
         <h2>ENTRE EM CONTATO:</h2>
         <form>
