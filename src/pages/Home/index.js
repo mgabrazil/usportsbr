@@ -56,6 +56,7 @@ function Home() {
             </div>
           </main>
         </section>
+        
         <section className="home1-container slide">
           <span
             className="material-symbols-outlined"
