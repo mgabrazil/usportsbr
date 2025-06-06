@@ -1,8 +1,23 @@
+<<<<<<< HEAD
+=======
+/* MOBILE FIRST*/
+>>>>>>> origin/main
 .cbfs-container-base {
     & {
         height: 100vh;
         width: 100vw;
     }
+<<<<<<< HEAD
+=======
+    & .cbfs-container{
+        background-image: url('../assets/CBFS_degradê-19.png');
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+    }
+>>>>>>> origin/main
 }
 
 .user-view {
@@ -17,6 +32,7 @@
         width: 100vw;
         z-index: 10;
     }
+<<<<<<< HEAD
 }
 
 .logo-container{
@@ -39,6 +55,8 @@
     & .outfit {
         height: 20rem;
     }
+=======
+>>>>>>> origin/main
     & .outfit-name{
         background-color: #f9b734;
         text-transform: uppercase;
@@ -48,6 +66,7 @@
     }
 }
 
+<<<<<<< HEAD
 .background-container{
     display: flex;
     justify-content: center;
@@ -66,6 +85,100 @@
         height: 101vh;
         z-index: 1;
     }
+=======
+.logo-container{
+    & {
+
+    }
+    & #logoCBFS{
+        margin-top: 30px;
+        height: 6rem;
+    }
+}
+
+.outfit-view-container{
+    & {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    & .outfit {
+        height: 20rem;
+        margin: 0 auto;
+    }
+
+    & span{
+        color: #f9b734;
+        font-size: 5rem;
+        position: fixed;
+        cursor: pointer;
+        z-index: 20;
+        transition: scale .2s ease-in-out;
+    }
+    & span:hover{
+        scale: 1.1;
+    }
+    & .arrow-outfit-left{
+        left: 0;
+    }
+    & .arrow-outfit-right{
+        right: 0;
+    }
+}
+
+.outfit-view-container .outfit {
+    height: 20rem;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.outfit-view-slider{
+    &{
+        display: flex;
+        position: relative;
+        width: 100vw;
+        transition: transform 0.5s ease-in-out;
+    }
+}
+
+.outfit-slide{
+    & {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 100vw;
+    }
+    & h2 {
+        margin-top: 40px;
+    }
+}
+
+.background-slider{
+    display: flex;
+    width: 600vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.background-slide{
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+}
+
+.background-img {
+    transition: background-image 0.5s ease-in-out;
+>>>>>>> origin/main
 }
 
 .gradient-background{
@@ -74,11 +187,19 @@
         position: fixed;
         justify-content: center;
         align-items: center;
+<<<<<<< HEAD
+=======
+        background-color: rgba(0, 0, 0, 0.623);
+>>>>>>> origin/main
         height: 100vh;
         width: 100vw;
         z-index: 2;
     }
     & #gradient-background-img {
         height: 100vh;
+<<<<<<< HEAD
+=======
+        width: 100vw;
+>>>>>>> origin/main
     }
 }
