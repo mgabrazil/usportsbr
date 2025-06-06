@@ -68,26 +68,10 @@ function Home() {
             <div className="clientes-mobile">
               <button className="btn-clientes-mobile">NOSSOS CLIENTES</button>
               <div className="logos-clientes">
-                <img
-                  className="logo-lff"
-                  src={logoLFF}
-                  alt="LFF"
-                />
-                <img
-                  className="logo-cbfs"
-                  src={logoCBFS}
-                  alt="CBFS"
-                />
-                <img
-                  className="logo-adef"
-                  src={logoADEF}
-                  alt="ADEF"
-                />
-                <img
-                  className="logo-futsal"
-                  src={logoFutsal}
-                  alt="Futsal"
-                />
+                <img className="logo-lff" src={logoLFF} alt="LFF" />
+                <img className="logo-cbfs" src={logoCBFS} alt="CBFS" />
+                <img className="logo-adef" src={logoADEF} alt="ADEF" />
+                <img className="logo-futsal" src={logoFutsal} alt="Futsal" />
               </div>
             </div>
           </main>
@@ -127,6 +111,18 @@ function Home() {
               </Link>
             </div>
           </main>
+
+          {/* ============ Bloco de “NOSSOS CLIENTES” (copiado do slide 1) ============ */}
+          <div className="clientes-mobile">
+            <button className="btn-clientes-mobile">NOSSOS CLIENTES</button>
+            <div className="logos-clientes">
+              <img className="logo-lff" src={logoLFF} alt="LFF" />
+              <img className="logo-cbfs" src={logoCBFS} alt="CBFS" />
+              <img className="logo-adef" src={logoADEF} alt="ADEF" />
+              <img className="logo-futsal" src={logoFutsal} alt="Futsal" />
+            </div>
+          </div>
+          {/* ====================================================================== */}
         </section>
       </div>
     </section>
