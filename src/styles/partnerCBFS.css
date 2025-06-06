@@ -32,7 +32,7 @@
 
     }
     & #logoCBFS{
-        height: 7rem;
+        height: 6rem;
     }
 }
 
@@ -55,6 +55,10 @@
         position: fixed;
         cursor: pointer;
         z-index: 20;
+        transition: scale .2s ease-in-out;
+    }
+    & span:hover{
+        scale: 1.1;
     }
     & .arrow-outfit-left{
         left: 0;
@@ -90,6 +94,9 @@
         align-items: center;
         min-width: 100vw;
     }
+    & h2 {
+        margin-top: 40px;
+    }
 }
 
 .background-slider{
@@ -119,6 +126,7 @@
         position: fixed;
         justify-content: center;
         align-items: center;
+        background-color: rgba(0, 0, 0, 0.623);
         height: 100vh;
         width: 100vw;
         z-index: 2;
