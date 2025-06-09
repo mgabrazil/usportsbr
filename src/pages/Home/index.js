@@ -52,15 +52,7 @@ function Home() {
                 <h1 className="titulo">DESIGN EXCLUSIVO</h1>
                 <p className="subtitulo">Entre em contato com a nossa equipe.</p>
               </div>
-              <div className="clientes-mobile">
-                <button className="btn-clientes-mobile">NOSSOS CLIENTES</button>
-                <div className="logos-clientes">
-                  <img className="logo-lff"   src={logoLFF}   alt="LFF"   />
-                  <img className="logo-cbfs"  src={logoCBFS}  alt="CBFS"  />
-                  <img className="logo-adef"  src={logoADEF}  alt="ADEF"  />
-                  <img className="logo-futsal"src={logoFutsal}alt="Futsal"/>
-                </div>
-              </div>
+
             </main>
           </section>
 
@@ -92,17 +84,22 @@ function Home() {
                 </Link>
               </div>
             </main>
-            <div className="clientes-mobile">
-              <button className="btn-clientes-mobile">NOSSOS CLIENTES</button>
-              <div className="logos-clientes">
-                <img className="logo-lff"   src={logoLFF}   alt="LFF"   />
-                <img className="logo-cbfs"  src={logoCBFS}  alt="CBFS"  />
-                <img className="logo-adef"  src={logoADEF}  alt="ADEF"  />
-                <img className="logo-futsal"src={logoFutsal}alt="Futsal"/>
-              </div>
-            </div>
+
           </section>
+
         </div>
+
+        <section className='partners-bottom-menu'>  
+              <div className="clientes-mobile">
+                <button className="btn-clientes-mobile">NOSSOS CLIENTES</button>
+                <div className="logos-clientes">
+                  <Link to="/lff"><img className="logo-lff"   src={logoLFF}   alt="LFF"   /></Link>
+                  <Link to="/cbfs"><img className="logo-cbfs"  src={logoCBFS}  alt="CBFS"  /></Link>
+                  <Link to="/adef"><img className="logo-adef"  src={logoADEF}  alt="ADEF"  /></Link>
+                  <Link to="/sub17"><img className="logo-futsal"src={logoFutsal}alt="Futsal"/></Link>
+                </div>
+              </div>
+          </section>
       </section>
 
       {/* CONTACT SECTION */}
