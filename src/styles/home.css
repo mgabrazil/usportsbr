@@ -183,8 +183,12 @@
     z-index:4;
   }
   .home1-container .btn-clientes-mobile {
-    background:#000; color:#fff; border-radius:0 20px 0 20px;
-    padding:4px 12px; font-size:4vw; margin-bottom:5vw;
+    background:#000; 
+    color:#fff; 
+    border-radius:0 20px 0 20px;
+    padding:4px 12px; 
+    font-size: 3vw; 
+    margin-bottom: 6vw;
   }
   .home1-container .logos-clientes {
     position:absolute; bottom:-118%; left:-20px;
