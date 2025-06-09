@@ -225,13 +225,13 @@ html, body {
   }
   .logo-lff   { 
     position: relative;
-    bottom: -9px;
+    bottom: -15px;
     width:14.5vw; 
     height:5vw;
 
   }
-  .logo-cbfs  { height:12vw; }
-  .logo-adef  { height:12vw; }
-  .logo-futsal{ height:12vw; }
+  .logo-cbfs  { height:13vw; }
+  .logo-adef  { height:13vw; }
+  .logo-futsal{ height:13vw; }
   
 }
