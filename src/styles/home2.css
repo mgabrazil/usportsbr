@@ -2,6 +2,7 @@
 .home-container-base {
   position: relative;
   width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -53,7 +54,6 @@
   z-index: 2;
 }
 .homem img {
-  display: block;
   width: 80vw;
   height: auto;
 }
@@ -65,8 +65,23 @@
   z-index: 2;
 }
 .mulher img {
-  display: block;
   width: 155vw;
+  height: auto;
+}
+
+.homem-mulher {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.homem-mulher img {
+  width: 100vw;
   height: auto;
 }
 
@@ -85,15 +100,15 @@
   font-size: 2.5vw;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   line-height: 1.1;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.7);
 }
 .subtitulo {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   margin: 0;
   line-height: 1.3;
 }
@@ -102,158 +117,83 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
-@media (max-width: 1280px) {
-  .homem {
-    top: 5%;
-    left: -13%;
-  }
-  .homem img {
-    width: 100vw;
-  }
+/* intermediários */
+@media (max-width:1280px){ /* … teus ajustes já colocados ali … */ }
+@media (max-width:1024px){ /* … */ }
+@media (max-width: 768px){ /* … */ }
 
-  .mulher {
-    top: -38vw;
-    right: 23%;
-  }
-  .mulher img {
-    width: 200vw;
-  }
-
-  .caixa-texto {
-<<<<<<< HEAD
-    right: 2vw;
-    bottom: 8vw;
-=======
-    right: 8vw;
-    bottom: 12vw;
->>>>>>> main
-  }
-  .titulo {
-    font-size: 2.8vw;
-    padding: 6px 4px;
-  }
-  .subtitulo {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .homem {
-    top: 10vw;
-    left: -16%;
-    position: relative;
-  }
-  .homem img {
-    width: 130vw;
-  }
-
-  .mulher {
-    top: -139vw;
-    right: 26%;
-  }
-  .mulher img {
-    width: 250vw;
-  }
-
-  .caixa-texto {
-    right: 6vw;
-    bottom: 6vw;
-  }
-  .titulo {
-    font-size: 3.2vw;
-    padding: 6px 4px;
-  }
-  .subtitulo {
-    font-size: 1.3rem;
-  }
-
-  .caixa-texto {
-    position: absolute;
-    right: 65%;
-    bottom: 19%;
-    transform: translateX(135%);
-    width: 85%;
-    text-align: left;
-  }
-}
-
-@media (max-width: 768px) {
-  .homem {
-    position: absolute;
-    top: 10%;
-    left: 35%;
-    transform: translateX(-50%);
-  }
-  .homem img {
-    width: 150vw;
-  }
-
-  .mulher {
-    position: absolute;
-    top: -20%;
-    left: 70%;
-    transform: translateX(-50%);
-    right: auto;
-  }
-  .mulher img {
-    width: 200vw;
-  }
-
-  .caixa-texto {
-    position: absolute;
-    right: 65%;
-    bottom: 5%;
-    transform: translateX(50%);
-    width: 90%;
-    text-align: center;
-  }
-  .titulo {
-    font-size: 6vw;
-    padding: 8px 6px;
-  }
-  .subtitulo {
-    font-size: 3.5vw;
-  }
-}
-
+/* mobile slide 1 */
 @media (max-width: 480px) {
-  .homem {
-    top: 20%;
-    left: 35%;
-    transform: translateX(-50%);
+  .homem img { width:0; }
+  .mulher img{ width:0; }
+  .homem-mulher {
+    display: flex;
+    top:12%;
+    left:7vw;
   }
-  .homem img {
-    width: 180vw;
-  }
+  .homem-mulher img {
+    width:210vw; 
+    object-fit:cover;
 
-  .mulher {
-    position: absolute;
-    top: -15%;
-    left: -40%;
-    transform: rotate(-10deg);
-  }
-  .mulher img {
-    width: 220vw;
   }
 
   .caixa-texto {
     position: absolute;
-    left: -50%;
-    bottom: 9vh;
-    transform: translateX(50%);
-    width: 95%;
-    text-align: center;
+    right:33%;
+    top:22%;
+    text-align:left;
   }
   .titulo {
-    font-size: 8vw;
-    padding: 10px 8px;
+    padding:2px 3px;
+    font-size:6vw;
   }
   .subtitulo {
-    font-size: 4vw;
+    font-size:3.9vw;
+    width:60vw;
   }
+
+  .clientes-mobile {
+    position:absolute;
+    bottom:14vw;
+    left:50%;
+    transform:translateX(-50%);
+    width:100%;
+    text-align:center;
+  }
+  .btn-clientes-mobile {
+    background:#000;
+    color:#fff;
+    border-radius:0 20px 0 20px;
+    padding:4px 12px;
+    font-size:4vw;
+    font-weight:600;
+    margin-bottom:5vw;
+  }
+  .logos-clientes {
+    position:absolute;
+    bottom:-110%;
+    left:-20px;
+    width:110%;
+    background:#222;
+    display:flex;
+    justify-content:center;
+    gap:10vw;
+    padding:2vw 0;
+  }
+  .logo-lff   { 
+    position: relative;
+    bottom: -9px;
+    width:14.5vw; 
+    height:5vw;
+
+  }
+  .logo-cbfs  { height:12vw; }
+  .logo-adef  { height:12vw; }
+  .logo-futsal{ height:12vw; }
+  
 }
