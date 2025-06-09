@@ -78,14 +78,6 @@
 }
 #right-arrow:hover { transform:scale(1.1); }
 
-.btn-clientes-mobile{
-    display: none;
-}
-
-.logos-clientes{
-    display: none;
-}
-
 @media screen and (max-width: 1280px){
     .body-container{
         & {}
@@ -207,13 +199,14 @@
 
     #left-arrow {
         position:absolute;
-        font-size:60px;
         top: 45%;
+        font-size:60px;
         transform:rotate(180deg);
         cursor:pointer;
         z-index:10;
+        transition: scale 0.5s ease;
     }
-    #left-arrow:hover { transform:scale(1.1); }
+    #left-arrow:hover { scale: 1.1; }
 
     #right-arrow {
         position:absolute;
