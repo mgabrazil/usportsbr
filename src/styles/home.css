@@ -1,53 +1,76 @@
-/* src/styles/home.css */
-.body-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 98vh;
-  width: 100vw;
-  overflow: hidden;
-}
-.body-container .tshirt img {
-  position: relative;
-  top: -120px;
-  left: -20px;
-  height: 57vw;
-  animation: float 3s ease-in-out infinite;
+
+.body-container{
+    & {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 98vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    & .tshirt img{
+        position: relative; 
+        top: -120px;
+        left: -20px;
+        height: 57vw;
+        animation: float 3s ease-in-out infinite;
+    }
 }
 
-.title { font-size:45px; }
-.title-top,
-.title-bottom {
-  background:#f9b734;
-  padding:2px 5px;
+.title{
+    & {
+        font-size: 45px;
+    }
+    & .title-top{
+        width: fit-content;
+        background-color: #f9b734;
+        margin-bottom: 15px;
+        padding: 2px 5px;
+    }
+    & .title-bottom{
+        width: fit-content;
+        background-color: #f9b734;
+    }
 }
+
 .phrase-container {
-  margin-top:35px;
-  font-size:36px;
+    margin-top: 35px;
+    width: fit-content;
+    font-size: 36px;
 }
+
 .btn-price {
-  text-decoration:none;
-  color:#fff;
-  margin-top:140px;
-  font-size:28px;
-  background:#f9b734;
-  padding:5px 25px;
-  font-weight:900;
-  transition:background-color .1s;
+    & {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        margin-top: 140px;
+        font-size: 28px;
+        background-color: #f9b734;
+        padding: 5px 25px;
+        font-weight: 900;
+        transition: background-color .1s ease;
+    }
+    &:hover{
+        background-color: #f3ae23;
+    }
 }
-.btn-price:hover { background:#f3ae23; }
 
 #left-arrow {
   position:absolute;
+  top: 25vw;
   font-size:60px;
   transform:rotate(180deg);
   cursor:pointer;
   z-index:10;
+  transition: scale 0.5s ease;
 }
-#left-arrow:hover { transform:scale(1.1); }
+#left-arrow:hover { scale: 1.1; }
 
 #right-arrow {
   position:absolute;
+  top: 25vw;
   font-size:60px;
   right:0;
   cursor:pointer;
@@ -55,17 +78,48 @@
 }
 #right-arrow:hover { transform:scale(1.1); }
 
-@media (max-width:1280px){
-  .body-container .tshirt img { height:62vw; }
-  .title { font-size:30px; }
-  .phrase-container{ font-size:28px; }
-  .btn-price { font-size:20px; margin-top:100px; }
+@media screen and (max-width: 1280px){
+    .body-container{
+        & {}
+
+        & .tshirt img{
+            top: -120px;
+            left: -0px;
+            height: 62vw;
+        }
+    }
+
+    .title{
+        & {
+            font-size: 30px;
+        }
+        & .title-top{
+            margin-bottom: 12px;
+            padding: 2px 6px;
+        }
+    }
+
+    .phrase-container {
+        margin-top: 30px;
+        font-size: 28px;
+    }
+
+    .btn-price {
+        margin-top: 100px;
+        font-size: 20px;
+    }
 }
 
 @keyframes float {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+    0% {
+    transform: translateY(0px);
+    }
+    50% {
+    transform: translateY(-10px);
+    }
+    100% {
+    transform: translateY(0px);
+    }
 }
 
 /* MOBILE (≤480px) – slide 2 */

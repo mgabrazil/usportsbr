@@ -122,8 +122,48 @@ html, body {
   overflow-y: auto;
 }
 
+.contact-section{
+  display: none;
+}
 /* intermediários */
-@media (max-width:1280px){ /* … teus ajustes já colocados ali … */ }
+@media (max-width:1280px){ 
+  .caixa-texto {
+    position: absolute;
+    right: 2%;
+    bottom: 10%;
+  }
+
+  .titulo{
+    font-size: 3vw;
+  }
+
+  .subtitulo{
+    width: 350px;
+  }
+
+  .homem {
+    position: absolute;
+    top: 12%;
+    left: -22%;
+    z-index: 2;
+  }
+  .homem img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .mulher {
+    position: relative;
+    right: 37%;
+    top: -33vw;
+    z-index: 2;
+  }
+  .mulher img {
+    width: 180vw;
+    height: auto;
+  }
+
+}
 @media (max-width:1024px){ /* … */ }
 @media (max-width: 768px){ /* … */ }
 
