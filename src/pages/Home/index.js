@@ -31,68 +31,68 @@ function Home() {
   const sliderTranslate = `translateX(-${(currentPage - 1) * 100}vw)`;
 
   return (
-    <section className="home-container-base">
-      <div className="slider" style={{ transform: sliderTranslate }}>
-        <section className="home2-container slide">
-          <main>
+      <section className="home-container-base">
+        <div className="slider" style={{ transform: sliderTranslate }}>
+          <section className="home2-container slide">
+            <main>
+              <span
+                className="material-symbols-outlined"
+                id="right-arrow"
+                onClick={showNext}
+              >
+                double_arrow
+              </span>
+              <div className="container-imagens">
+                <div className="homem">
+                  <img src={imagemHomem} alt="Homem" />
+                </div>
+                <div className="mulher">
+                  <img src={imagemMulher} alt="Mulher" />
+                </div>
+              </div>
+              <div className="caixa-texto">
+                <h1 className="titulo">DESIGN EXCLUSIVO</h1>
+                <p className="subtitulo">Entre em contato com a nossa equipe.</p>
+              </div>
+            </main>
+          </section>
+
+          <section className="home1-container slide">
             <span
               className="material-symbols-outlined"
-              id="right-arrow"
-              onClick={showNext}
+              id="left-arrow"
+              onClick={showPrevious}
             >
               double_arrow
             </span>
-            <div className="container-imagens">
-              <div className="homem">
-                <img src={imagemHomem} alt="Homem" />
-              </div>
-              <div className="mulher">
-                <img src={imagemMulher} alt="Mulher" />
-              </div>
-            </div>
-            <div className="caixa-texto">
-              <h1 className="titulo">DESIGN EXCLUSIVO</h1>
-              <p className="subtitulo">Entre em contato com a nossa equipe.</p>
-            </div>
-          </main>
-        </section>
-        
-        <section className="home1-container slide">
-          <span
-            className="material-symbols-outlined"
-            id="left-arrow"
-            onClick={showPrevious}
-          >
-            double_arrow
-          </span>
-          <span
-            className="material-symbols-outlined"
-            id="right-arrow"
-            onClick={showPrevious}
-          >
-            double_arrow
-          </span>
-          <main className="body-container">
-            <div className="tshirt">
+            <span
+              className="material-symbols-outlined"
+              id="right-arrow"
+              onClick={showPrevious}
+            >
+              double_arrow
+            </span>
+            <main className="body-container">
+              <div className="tshirt">
               <img src={shirt} />
-            </div>
-            <div className="text-container">
-              <div className="title">
-                <h1 className="title-top">SEU TIME,</h1>
-                <h1 className="title-bottom">SUA IDENTIDADE</h1>
               </div>
-              <div className="phrase-container">
+              <div className="text-container">
+                <div className="title">
+                  <h1 className="title-top">SEU TIME,</h1>
+                  <h1 className="title-bottom">SUA IDENTIDADE</h1>
+                </div>
+                <div className="phrase-container">
                 <p>Uniformes personalizados </p>
-                <p>com qualidade e entrega rápida</p>
+                  <p>com qualidade e entrega rápida</p>
+                </div>
+                <Link to="#" className="btn-price">
+                  CLIQUE AQUI E FAÇA SEU ORÇAMENTO
+                </Link>
               </div>
-              <Link to="#" className="btn-price">
-                CLIQUE AQUI E FAÇA SEU ORÇAMENTO
-              </Link>
-            </div>
-          </main>
-        </section>
-      </div>
-    </section>
+            </main>
+          </section>
+        </div>
+      </section>
   );
 }
 
