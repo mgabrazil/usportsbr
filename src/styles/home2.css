@@ -203,15 +203,21 @@ html, body {
     width:100%;
     text-align:center;
   }
+
   .btn-clientes-mobile {
-    background:#000;
-    color:#fff;
-    border-radius:0 20px 0 20px;
-    padding:4px 12px;
-    font-size:3vw;
-    font-weight:600;
-    margin-bottom: 6vw;
+    background: #222;
+    color: #fff;
+    border: none;              
+    outline: none;             
+    border-radius: 0 20px 0 20px;
+    padding: 4px 12px;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-bottom: 6.5vw;
+    box-shadow: none;          
   }
+
+
   .logos-clientes {
     position:absolute;
     bottom:-118%;

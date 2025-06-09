@@ -191,10 +191,16 @@
     margin-bottom: 6vw;
   }
   .home1-container .logos-clientes {
-    position:absolute; bottom:-118%; left:-20px;
-    width:110%; background:#222;
-    display:flex; justify-content:center;
-    gap:10vw; padding:2vw 0; z-index:3;
+    position:absolute; 
+    bottom:-118%; 
+    left:-20px;
+    width:110%; 
+    background:#222;
+    display:flex; 
+    justify-content:center;
+    gap:10vw; 
+    padding:2vw 0; 
+    z-index:3;
   }
   .home1-container .logo-lff   { width:14.5vw; height:5vw; }
   .home1-container .logo-cbfs  { height:13vw; }
