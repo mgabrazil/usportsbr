@@ -80,8 +80,6 @@
 
 @media screen and (max-width: 1280px){
     .body-container{
-        & {}
-
         & .tshirt img{
             top: -120px;
             left: -0px;
