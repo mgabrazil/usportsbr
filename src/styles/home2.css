@@ -125,8 +125,13 @@ html, body {
   }
 
   .caixa-texto {
+<<<<<<< HEAD
+    right: 2vw;
+    bottom: 8vw;
+=======
     right: 8vw;
     bottom: 12vw;
+>>>>>>> main
   }
   .titulo {
     font-size: 2.8vw;
