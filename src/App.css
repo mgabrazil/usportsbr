@@ -5,7 +5,7 @@
 
 body, html {
   position: relative;
-  background: linear-gradient(to bottom, #1D1D1B 53%, #f9b734 123%);
+  background: linear-gradient(to bottom, #1D1D1B 53%, #f9b734 123%) !important;
   background-repeat: no-repeat;
   background-attachment: fixed; /* importante */
   height: 100%;

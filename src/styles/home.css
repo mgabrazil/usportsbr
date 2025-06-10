@@ -23,13 +23,13 @@
     }
     & .title-top{
         width: fit-content;
-        background-color: #f9b734;
+        background-color: #f9b734 !important;
         margin-bottom: 15px;
         padding: 2px 5px;
     }
     & .title-bottom{
         width: fit-content;
-        background-color: #f9b734;
+        background-color: #f9b734 !important;
     }
 }
 
@@ -47,13 +47,13 @@
         align-items: center;
         margin-top: 140px;
         font-size: 28px;
-        background-color: #f9b734;
+        background-color: #f9b734 !important;
         padding: 5px 25px;
         font-weight: 900;
         transition: background-color .1s ease;
     }
     &:hover{
-        background-color: #f3ae23;
+        background-color: #f3ae23 !important;
     }
 }
 
