@@ -41,6 +41,7 @@
     }
     & #logoCBFS{
         margin-top: 30px;
+        margin-bottom: 20px;
         height: 6rem;
     }
 }
@@ -51,11 +52,6 @@
         justify-content: center;
         align-items: center;
         width: 100vw;
-    }
-
-    & .outfit {
-        height: 20rem;
-        margin: 0 auto;
     }
 
     & span{
@@ -85,7 +81,6 @@
     margin: 0 auto;
 }
 
-
 .outfit-view-slider{
     &{
         display: flex;
@@ -104,8 +99,15 @@
         min-width: 100vw;
     }
     & h2 {
-        margin-top: 5px;
+        margin-top: 15px;
     }
+}
+
+#product-img-click{
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.295);
+    text-transform: lowercase;
 }
 
 .background-slider{
