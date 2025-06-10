@@ -1,5 +1,10 @@
-import React from "react";
+import React, { use } from "react";
 import { useEffect, useState } from "react";
+
+import ReactImageMagnify from "react-image-magnify";
+
+import InnerImageZoom from 'react-inner-image-zoom';
+import 'react-inner-image-zoom/lib/styles.min.css';
 
 import degrade from '../../assets/CBFS_degradê-19.png';
 import logoCBFS from '../../assets/CBFS_logo-07.png';
@@ -22,6 +27,8 @@ import '../../styles/partnerCBFS.css';
 export default function PartnerCBFS(){
 
     const [currentOutfit, setCurrentOutfit] = useState(1);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [isMobileZoomActive, setIsMobileZoomActive] = useState(false);
 
     const backgroundImages = [bgAmarelinha, bgCamiseta, bgGolaPolo, bgCalca, bgCasaco, bgCortaVento];
 
@@ -36,30 +43,61 @@ export default function PartnerCBFS(){
         zIndex: 1
     };
 
+    const currentOutfitImage = [
+        { src: amarelinha, name: "Amarelinha" },
+        { src: camiseta, name: "Camiseta" },
+        { src: golaPolo, name: "gola Polo" },
+        { src: calcaTactel, name: "Calca Tactel" },
+        { src: casaco, name: "Casaco" },
+        { src: cortaVento, name: "Corta Vento" },
+    ]
+
     const sliderOutfit = `translateX(-${(currentOutfit - 1) * 100}vw)`;
 
     useEffect(() => {
+        // Preload background images
         backgroundImages.forEach(src => {
             const img = new Image();
             img.src = src;
         });
-    }, []);
+
+        // Preload outfit images for zoom
+        currentOutfitImage.forEach(outfit => {
+            const img = new Image();
+            img.src = outfit.src;
+        });
+
+    }, [backgroundImages, currentOutfitImage]);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [])
 
     function showPreviousOutfit(){
         if (currentOutfit === 1) {
-            setCurrentOutfit(6);
+            setCurrentOutfit(currentOutfitImage.lenght);
         } else {
             setCurrentOutfit(currentOutfit - 1);
         }
     }
 
     function showNextOutfit(){
-        if (currentOutfit === 6) {
+        if (currentOutfit === currentOutfitImage.length) {
             setCurrentOutfit(1);
         } else {
             setCurrentOutfit(currentOutfit + 1);
         }
     }
+
+    const isMobile = windowWidth <= 850;
 
     return(
         <section className="cbfs-container-base">
@@ -77,41 +115,59 @@ export default function PartnerCBFS(){
 
                         <div className="outfit-view-slider" style={{transform: sliderOutfit}}>
 
-                            <div className="outfit-slide" id="one">
-                                <img src={amarelinha} className="outfit" />
+                            {currentOutfitImage.map((outfit, index) => (
+                                <div className="outfit-slide" id={`slide-${index + 1}`} key={index}>
 
-                                <h2 className="outfit-name">Amarelinha</h2>
-                            </div>
+                                {!isMobile ? (
+                                    <ReactImageMagnify 
+                                        {...{
+                                            smallImage: {
+                                                alt: `UNIFORME cbfs - ${outfit.name}`,
+                                                src: outfit.src,
+                                                width: 300,
+                                                height: 300,
+                                                id: 'outfit-image-small'
+                                            },
+                                            largeImage: {
+                                                src: outfit.src,
+                                                width: 1000,
+                                                height: 1000
+                                            },
+                                            enlargedImageContainerDimensions: {
+                                                width: 300,
+                                                height: 300,
+                                            },
+                                            enlargedImagePosition: 'beside',
+                                            isHintEnabled: true,
+                                            shouldHideHintForTouchDevices: true,
+                                            fadeDurationInMs: 250,
+                                            hoverDelayInMs: 0, 
+                                            lensStyle: { backgroundColor: 'rgba(0, 0, 0, 0.58)' },
+                                            containerStyle: { zIndex: 10, position: 'relative' },
+                                            
+                                            className: 'outfit-magnify-container'
+                                        }}
+                                    />
 
-                            <div className="outfit-slide" id="two">
-                                <img src={camiseta} className="outfit" />
+                                    ) : (
 
-                                <h2 className="outfit-name">Camiseta</h2>
-                            </div>
+                                        <div className="mobile-outfit">    
+                                            <InnerImageZoom 
+                                                src={outfit.src}
+                                                zoomSrc={outfit.src}
+                                                zoomScale={.3}
+                                                hideHint={true}
+                                                width={300}
+                                                moveType="drag"
+                                            />
+                                            
+                                            <p id="product-img-click" >Clique e arraste a imagem</p>
+                                        </div>
+                                    )}
 
-                            <div className="outfit-slide" id="three">
-                                <img src={golaPolo} className="outfit" />
-
-                                <h2 className="outfit-name">Gola Polo</h2>
-                            </div>
-
-                            <div className="outfit-slide" id="four">
-                                <img src={calcaTactel} className="outfit" />
-
-                                <h2 className="outfit-name">Calça Tactel</h2>
-                            </div>
-
-                            <div className="outfit-slide" id="five">
-                                <img src={casaco} className="outfit" />
-
-                                <h2 className="outfit-name">Casaco</h2>
-                            </div>
-
-                            <div className="outfit-slide" id="six">
-                                <img src={cortaVento} className="outfit" />
-
-                                <h2 className="outfit-name">Corta Vento</h2>
-                            </div>
+                                    <h2 className="outfit-name">{outfit.name}</h2>
+                                </div>
+                            ))}
 
                         </div>
             
