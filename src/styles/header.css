@@ -194,9 +194,6 @@ header {
     }
 
     .partners-container{
-        & {
-
-        }
         & .partners-btn{
             height: 40px;
             width: fit-content;
@@ -262,9 +259,6 @@ header {
         }
     }
     .partners-container{
-        & {
-
-        }
         & .partners-btn{
             width: fit-content;
             padding: 5px 0px 5px 10px;
@@ -298,7 +292,7 @@ header {
     .menu-container{
         & {
             justify-content: center;
-            background-color: #f9b734;
+            background-color: #f9b734 !important;
             height: 2.6ch;
             font-size: 12.5px;
             width: 100vw;
