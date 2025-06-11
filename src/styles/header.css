@@ -280,7 +280,8 @@ header {
 /* TELAS CELULARES */
 @media screen and (max-width: 996px) {
     header {
-        width: 100vw;
+        width: 100dvw;
+        height: 10dvh;
         flex-direction: column;
         padding: 0px;
         color: #F7F6F5;
