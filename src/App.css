@@ -20,4 +20,5 @@ html {
 
 body {
     display: flex;
+    box-sizing: border-box;
 }

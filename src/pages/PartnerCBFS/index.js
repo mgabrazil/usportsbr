@@ -174,7 +174,7 @@ export default function PartnerCBFS(){
 
                         </div>
             
-                        <span class="material-symbols-outlined arrow-outfit-right" onClick={showNextOutfit}>arrow_right</span>
+                        <span className="material-symbols-outlined arrow-outfit-right" onClick={showNextOutfit}>arrow_right</span>
 
                     </div>
 

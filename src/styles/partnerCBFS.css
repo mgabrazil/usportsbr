@@ -3,6 +3,7 @@
     & {
         height: 90dvh;
         width: 100dvw;
+        overflow: hidden;
     }
     & .cbfs-container{
         background-image: url('../assets/CBFS_degradê-19.png');
