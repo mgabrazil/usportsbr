@@ -23,9 +23,10 @@
         flex-direction: column;
         position: fixed;
         bottom: 0;
-        height: 85vh;
+        height: 85%;
         width: 100vw;
         z-index: 10;
+        overflow: hidden;
     }
     & .outfit-name{
         background-color: #f9b734;
@@ -37,9 +38,6 @@
 }
 
 .logo-container{
-    & {
-
-    }
     & #logoCBFS{
         margin-top: 30px;
         margin-bottom: 20px;
@@ -133,16 +131,13 @@
     left: 0;
     transition: transform 0.5s ease-in-out;
     z-index: 1;
+    overflow: hidden;
 }
 
 .background-slide{
     width: 100vw;
     height: 100vh;
     flex-shrink: 0;
-}
-
-.background-img {
-    transition: background-image 0.5s ease-in-out;
 }
 
 .gradient-background{
