@@ -161,7 +161,10 @@ export default function PartnerCBFS(){
                                                 moveType="drag"
                                             />
                                             
-                                            <p id="product-img-click" >Clique e arraste a imagem</p>
+                                            <div className="zoom-hint">
+                                                <span className="material-symbols-outlined" id="zoom-icon">zoom_in</span>
+                                                <p id="product-img-click" >Clique e arraste a imagem</p>
+                                            </div>
                                         </div>
                                     )}
 

@@ -3,6 +3,8 @@
 /* TELAS MAIORES */
 header {
     position: absolute;
+    left: 0;
+    top: 0;
     width: 95dvw;
     height: 18px;
     display: flex;
