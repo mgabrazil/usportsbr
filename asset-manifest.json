@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/usportsbr/static/css/main.fb55581b.css",
+    "main.css": "/usportsbr/static/css/main.6e9019dc.css",
     "main.js": "/usportsbr/static/js/main.760de281.js",
     "static/media/CBFS_CASACO_4.png": "/usportsbr/static/media/CBFS_CASACO_4.d032cc851df38534af3b.png",
     "static/media/CBFS_CAMISETA_2.png": "/usportsbr/static/media/CBFS_CAMISETA_2.8ada2608b0d81b34f7de.png",
@@ -26,11 +26,11 @@
     "static/media/img-logo.png": "/usportsbr/static/media/img-logo.e163130c552d09171ae8.png",
     "static/media/img-whatsapp.png": "/usportsbr/static/media/img-whatsapp.1dd8ca2765f1f177ab22.png",
     "index.html": "/usportsbr/index.html",
-    "main.fb55581b.css.map": "/usportsbr/static/css/main.fb55581b.css.map",
+    "main.6e9019dc.css.map": "/usportsbr/static/css/main.6e9019dc.css.map",
     "main.760de281.js.map": "/usportsbr/static/js/main.760de281.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb55581b.css",
+    "static/css/main.6e9019dc.css",
     "static/js/main.760de281.js"
   ]
 }
