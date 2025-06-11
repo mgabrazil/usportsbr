@@ -12,6 +12,7 @@ body, html {
   width: 100%;
   color: #F7F6F5;
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -20,5 +21,4 @@ html {
 
 body {
     display: flex;
-    box-sizing: border-box;
 }

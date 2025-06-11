@@ -1,3 +1,7 @@
+:root {
+    --header-height: 15dvh;
+}
+
 /* MOBILE FIRST*/
 .cbfs-container-base {
     & {
@@ -6,11 +10,14 @@
         overflow: hidden;
     }
     & .cbfs-container{
-        background-image: url('../assets/CBFS_degradê-19.png');
         background-position: center;
         background-size: cover;
         height: 100vh;
         width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
         background-color: rgb(255, 255, 255);
     }
 }
@@ -22,11 +29,11 @@
         justify-content: flex-start;
         flex-direction: column;
         position: fixed;
-        bottom: 0;
-        height: 85%;
+        top: var(--header-height);
+        height: calc(100vh - var(--header-height));
         width: 100vw;
         z-index: 10;
-        overflow: hidden;
+        overflow-y: hidden;
     }
     & .outfit-name{
         background-color: #f9b734;
