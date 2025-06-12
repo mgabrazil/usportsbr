@@ -1,4 +1,4 @@
-import React, { use } from "react";
+import React from "react";
 import { useEffect, useState } from "react";
 
 import ReactImageMagnify from "react-image-magnify";
@@ -28,7 +28,6 @@ export default function PartnerCBFS(){
 
     const [currentOutfit, setCurrentOutfit] = useState(1);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [isMobileZoomActive, setIsMobileZoomActive] = useState(false);
 
     const backgroundImages = [bgAmarelinha, bgCamiseta, bgGolaPolo, bgCalca, bgCasaco, bgCortaVento];
 
