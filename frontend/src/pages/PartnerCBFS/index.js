@@ -9,17 +9,17 @@ import 'react-inner-image-zoom/lib/styles.min.css';
 import degrade from '../../assets/CBFS_degradê-19.png';
 import logoCBFS from '../../assets/CBFS_logo-07.png';
 
-import bgAmarelinha from '../../assets/CBFS_AMARELINHA_5.png';
+import bgAmarelinha from '../../assets/CBFS_AMARELINHA_5.jpg';
 import amarelinha from '../../assets/CBFS_AMARELINHA.png';
-import bgCamiseta from '../../assets/CBFS_CAMISETA_2.png';
+import bgCamiseta from '../../assets/CBFS_CAMISETA_2.jpg';
 import camiseta from '../../assets/CBFS_CAMISETA.png';
-import bgGolaPolo from '../../assets/CBFS_GOLA_POLO_1.png';
+import bgGolaPolo from '../../assets/CBFS_GOLA_POLO_1.jpg';
 import golaPolo from '../../assets/CBFS_GOLA_POLO.png';
-import bgCalca from '../../assets/CBFS_CALÇA_3.png';
+import bgCalca from '../../assets/CBFS_CALÇA_3.jpg';
 import calcaTactel from '../../assets/CBFS_CALÇA_TACTEL.png';
-import bgCasaco from '../../assets/CBFS_CASACO_4.png';
+import bgCasaco from '../../assets/CBFS_CASACO_4.jpg';
 import casaco from '../../assets/CBFS_CASACO.png';
-import bgCortaVento from '../../assets/CBFS_CORTA_VENTO_4.png';
+import bgCortaVento from '../../assets/CBFS_CORTA_VENTO_4.jpg';
 import cortaVento from '../../assets/CBFS_CORTA_VENTO.png';
 
 import '../../styles/partnerCBFS.css';
