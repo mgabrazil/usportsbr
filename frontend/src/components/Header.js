@@ -18,7 +18,7 @@ export default function Header(){
     }
 
     function searchKeydown(e){
-        if (e.key === 'Enter' && userSearch.trim() != ''){
+        if (e.key === 'Enter' && userSearch.trim() !== ''){
             navigate(`/search?q=${encodeURIComponent(userSearch.trim())}`);
             setUserSearch('');
         }

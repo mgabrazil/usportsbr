@@ -50,7 +50,7 @@
 .homem {
   position: absolute;
   top: 3.5%;
-  left: -10%;
+  left: -18%;
   z-index: 2;
 }
 .homem img {
@@ -60,12 +60,12 @@
 
 .mulher {
   position: relative;
-  right: 17%;
-  top: -30vw;
+  right: 16%;
+  top: -20vw;
   z-index: 2;
 }
 .mulher img {
-  width: 155vw;
+  width: 135vw;
   height: auto;
 }
 
@@ -94,7 +94,7 @@
 }
 .titulo {
   display: inline-block;
-  background-color: #f9b734;
+  background-color: #ef7f2b;
   padding: 2px 5px;
   margin-bottom: 0.6rem;
   font-size: 2.5vw;
@@ -152,12 +152,12 @@ html, body {
 
   .mulher {
     position: relative;
-    right: 37%;
-    top: -33vw;
+    right: 26.7%;
+    top: -23vw;
     z-index: 2;
   }
   .mulher img {
-    width: 180vw;
+    width: 160vw;
     height: auto;
   }
 
@@ -171,8 +171,8 @@ html, body {
   .mulher img{ width:0; }
   .homem-mulher {
     display: flex;
-    top:12%;
-    left:7vw;
+    top:11%;
+    left:10vw;
   }
   .homem-mulher img {
     width:210vw; 

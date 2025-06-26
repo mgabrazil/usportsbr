@@ -38,7 +38,7 @@ header {
     }
     & span {
         font-size: 60px;
-        color: #f9b734;
+        color: #ef7f2b;
     }
 }
 
@@ -50,13 +50,13 @@ header {
     }
     & .search{
         display: flex;
-        color: #f9b734;
+        color: #ef7f2b;
         font-size: 65px;
         margin-right: 50px;
         cursor: pointer;
     }
     & .search:hover{
-        color: #f3ae23;
+        color: #ce6d22;
     }
     .search-input{
         position: absolute;
@@ -73,13 +73,13 @@ header {
     }
     & .close{
         display: flex;
-        color: #f9b734;
+        color: #ef7f2b;
         font-size: 70px;
         margin-right: 45px;
         cursor: pointer;
     }
     & .close:hover{
-        color: #f3ae23;
+        color: #ce6d22;
     }
 }
 
@@ -93,7 +93,7 @@ header {
         align-items: center;
         height: 50px;
         width: 200px;
-        background-color: #f9b734;
+        background-color: #ef7f2b;
         padding: 15px 33px;
         font-size: 24px;
         color: #1D1D1B;
@@ -102,7 +102,7 @@ header {
     }
 
     & .partners-btn:hover{
-        background-color: #f3ae23;
+        background-color: #ce6d22;
     }
     & #partnersArrow{
         font-size: 60px;
@@ -295,7 +295,7 @@ header {
     .menu-container{
         & {
             justify-content: center;
-            background-color: #f9b734 !important;
+            background-color: #ef7f2b !important;
             height: 2.6ch;
             font-size: 12.5px;
             width: 100vw;
