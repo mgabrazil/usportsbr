@@ -36,7 +36,7 @@
         overflow: hidden;
     }
     & .outfit-name{
-        background-color: #f9b734;
+        background-color: #ef7f2b;
         text-transform: uppercase;
         padding: 3px 20px;
         border-radius: 0px 10px;
@@ -61,7 +61,7 @@
     }
 
     & span{
-        color: #f9b734;
+        color: #ef7f2b;
         font-size: 5rem;
         position: fixed;
         cursor: pointer;
