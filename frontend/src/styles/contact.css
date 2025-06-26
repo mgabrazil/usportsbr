@@ -17,7 +17,7 @@
     @media (max-width:480px) {
 
     .contact-section {
-        background: linear-gradient(to bottom, #1D1D1B 53%, #f9b734 123%);
+        background: linear-gradient(to bottom, #1D1D1B 53%, #ef7f2b 123%);
         padding: 8vw 5vw;
         color: #fff;
     }
@@ -39,7 +39,7 @@
 
     .contact-section .input-label {
         font-size: 4vw;
-        color: #f9b734;
+        color: #ef7f2b;
         font-family: "Montserrat", sans-serif;
         margin-bottom: 1.5vw;
     }
