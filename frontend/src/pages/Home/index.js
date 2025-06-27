@@ -7,6 +7,9 @@ import shirt from '../../assets/img-tshirt.png';
 import imagemHomem from '../../assets/img-man.png';
 import imagemMulher from '../../assets/img-woman-fita.png';
 import imagemHomemMulher from '../../assets/img-man-woman.png';
+import imagemPaginaContato from '../../assets/contact-page-img.png';
+
+import animacaoPaginaContato from '../../assets/contact-animation.gif';
 
 import logoLFF from '../../assets/LFF.png';
 import logoCBFS from '../../assets/CBFS_logo-07.png';
@@ -104,26 +107,34 @@ function Home() {
 
       {/* CONTACT SECTION */}
       <section className="contact-section">
-        <h2>ENTRE EM CONTATO:</h2>
-        <form>
-          <div className="input-group">
-            <label htmlFor="nome" className="input-label">Nome</label>
-            <input type="text"   id="nome"    name="nome"    className="input-field" />
-          </div>
-          <div className="input-group">
-            <label htmlFor="celular" className="input-label">Celular</label>
-            <input type="tel"    id="celular" name="celular" className="input-field" />
-          </div>
-          <div className="input-group">
-            <label htmlFor="email" className="input-label">Email</label>
-            <input type="email"  id="email"   name="email"   className="input-field" />
-          </div>
-          <div className="input-group">
-            <label htmlFor="mensagem" className="input-label">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" className="textarea-field"></textarea>
-          </div>
-          <button type="submit" className="btn-submit">Enviar Mensagem</button>
-        </form>
+
+        <div className='form-container'>
+          <h2>ENTRE EM CONTATO:</h2>
+          <form>
+            <div className="input-group">
+              <label htmlFor="nome" className="input-label">Nome</label>
+              <input type="text"   id="nome"    name="nome"    className="input-field" maxLength={50} />
+            </div>
+            <div className="input-group">
+              <label htmlFor="celular" className="input-label">Celular</label>
+              <input type="tel"    id="celular" name="celular" className="input-field" maxLength={15} />
+            </div>
+            <div className="input-group">
+              <label htmlFor="email" className="input-label">Email</label>
+              <input type="email"  id="email"   name="email"   className="input-field" maxLength={50} />
+            </div>
+            <div className="input-group textarea-container">
+              <label htmlFor="mensagem" className="input-label">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" className="textarea-field" maxLength={1000} />
+            </div>
+            <button type="submit" className="btn-submit">Enviar Mensagem</button>
+          </form>
+        </div>
+
+        <div className='contact-page-img'>
+          <img src={animacaoPaginaContato} alt='imagem-contato' />
+        </div>
+
       </section>
     </>
   );

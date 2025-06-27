@@ -1,5 +1,6 @@
 /* src/styles/contact.css */
 
+/* CODIGO COMENTADO PARA QUE FUNCIONE NO DESKTOP
 @media (min-width:480px) {
     .contact-section{
         display: none;
@@ -13,16 +14,116 @@
         display: none;
     }
     }
-
-    @media (max-width:480px) {
-
-    .contact-section {
-        background: linear-gradient(to bottom, #1D1D1B 53%, #ef7f2b 123%);
-        padding: 8vw 5vw;
-        color: #fff;
+*/
+@media screen and (min-width: 480px) {
+    
+    .contact-section{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        padding: 5vw 5vw;
+        color: var(--white);
     }
 
-    .contact-section h2 {
+    .form-container{
+        &{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: 70vh;
+            width: 450px;
+        }
+        & h2{
+            font-size: 2.7ch;
+            margin-bottom: 2rem;
+        }
+    }
+
+    form{
+        &{
+            width: 100%;
+        }
+        & label{
+            padding: 0px 2px;
+        }
+        & input{
+            color: var(--white);
+            outline: none;
+            border: none;
+            background-color: var(--light-grey);
+            height: 4ch;
+            width: 75%;
+            border-radius: 10px;
+            margin-top: 5px;
+            padding: 2px 10px;
+        }
+        & .input-group{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+        }
+        & .textarea-container{
+            margin-top: 25px;
+            align-items: center;
+        }
+        & textarea{
+            margin-top: 5px;
+            color: var(--white);
+            outline: none;
+            border: none;
+            background-color: var(--light-grey);
+            height: 7rem;
+            border-radius: 10px;
+            padding: 10px;
+            width: calc(100% - 20px);
+            resize: none;
+        }
+        & button{
+            color: var(--white);
+            border: none;
+            margin-top: 15px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100%;
+            background-color: var(--dark-grey);
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        & button:hover{
+            background-color: var(--black);
+            color: var(--orange);
+        }
+    }
+
+    .contact-page-img{
+        &{
+            height: 80vh;
+            overflow: hidden;
+            z-index: 5;
+        }
+        & img {
+            position: relative;
+            top: -100px;
+            transform: rotate(-18deg);
+            height: 120vh;
+            image-rendering: auto;
+        }
+    }
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:480px) {
+
+    .contact-section {
+        display: block;
+        background: linear-gradient(to bottom, var(--dark-grey) 53%, var(--orange) 123%);
+        padding: 8vw 5vw;
+        color: var(--white);
+    }
+
+    .form-container h2 {
         position: relative;
         font-size: 4.7vw;
         left: -22%;
@@ -31,44 +132,44 @@
         font-family: "Montserrat", sans-serif;
     }
 
-    .contact-section .input-group {
+    .form-container .input-group {
         margin-bottom: 5vw;
         display: flex;
         flex-direction: column;
     }
 
-    .contact-section .input-label {
+    .form-container .input-label {
         font-size: 4vw;
-        color: #ef7f2b;
+        color: var(--orange);
         font-family: "Montserrat", sans-serif;
         margin-bottom: 1.5vw;
     }
 
-    .contact-section .input-field,
-    .contact-section .textarea-field {
-        background-color: #333;
+    .form-container .input-field,
+    .form-container .textarea-field {
+        background-color: var(--light-grey);
         border: none;
         border-radius: 1vw;
-        color: #fff;
+        color: var(--white);
         outline: none;
     }
 
-    .contact-section .input-field {
+    .form-container .input-field {
         padding: 3vw;
         font-size: 4vw;
     }
 
-    .contact-section .textarea-field {
+    .form-container .textarea-field {
         padding: 4vw 3vw;
         font-size: 4vw;
         min-height: 28vw;
         resize: none;
     }
 
-    .contact-section .btn-submit {
+    .form-container .btn-submit {
         margin-top: 6vw;
-        background-color: #000;
-        color: #fff;
+        background-color: var(--black);
+        color: var(--white);
         border: none;
         border-radius: 2vw;
         padding: 4vw 6vw;
@@ -82,7 +183,11 @@
         transition: background-color 0.2s ease-in-out;
     }
 
-    .contact-section .btn-submit:hover {
-        background-color: #222;
+    .form-container .btn-submit:hover {
+        background-color: var(--grey);
+    }
+
+    .contact-page-img{
+        display: none;
     }
 }

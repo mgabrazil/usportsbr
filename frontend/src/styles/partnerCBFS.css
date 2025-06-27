@@ -36,7 +36,7 @@
         overflow: hidden;
     }
     & .outfit-name{
-        background-color: #ef7f2b;
+        background-color: var(--orange);
         text-transform: uppercase;
         padding: 3px 20px;
         border-radius: 0px 10px;
@@ -61,7 +61,7 @@
     }
 
     & span{
-        color: #ef7f2b;
+        color: var(--orange);
         font-size: 5rem;
         position: fixed;
         cursor: pointer;
@@ -148,6 +148,19 @@
 }
 
 .gradient-background{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--black) 55%, var(--orange) 120%);
+    opacity: 75%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+}
+
+/* CONFIGURAÇÕES IMAGEM GRADIENTE COMENTADA
+.gradient-background{
     &{
         display: flex;
         position: fixed;
@@ -163,3 +176,4 @@
         width: 100vw;
     }
 }
+*/

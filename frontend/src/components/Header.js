@@ -42,6 +42,8 @@ export default function Header(){
 
                 <div className='search-and-partners'>
 
+                {/* BOTÃO DE PESQUISA COMENTADO
+
                     {showSearch && (
                         <input 
                             id="searchInput"
@@ -59,6 +61,8 @@ export default function Header(){
                     ) : (
                         <span className="material-symbols-outlined search" id="search-btn" onClick={Search}>search</span>
                     )}
+                    
+                    */}
 
                     <div className='partners-container'>
                         <div className='partners-btn' onClick={showPartnersBtn}>
