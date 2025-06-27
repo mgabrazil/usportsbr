@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 import logo from '../assets/img-logo.png';
 
+import { ReactComponent as ArrowDown } from '../assets/arrow_drop_down.svg';
+
 import '../styles/header.css';
 
 export default function Header(){
@@ -35,9 +37,9 @@ export default function Header(){
                 </div>
 
                 <div className="menu-container">
-                    <Link to='/tecidos'>Tecidos<span className="material-symbols-outlined">arrow_drop_down</span></Link>
-                    <Link to='/fabricacao'>Fabricação<span className="material-symbols-outlined">arrow_drop_down</span></Link>
-                    <Link to='/design'>Design<span className="material-symbols-outlined">arrow_drop_down</span></Link>
+                    <Link to='/tecidos'>Tecidos<ArrowDown id='arrow-down-icon'/></Link>
+                    <Link to='/fabricacao'>Fabricação<ArrowDown id='arrow-down-icon'/></Link>
+                    <Link to='/design'>Design<ArrowDown id='arrow-down-icon'/></Link>
                 </div>
 
                 <div className='search-and-partners'>
@@ -67,7 +69,7 @@ export default function Header(){
                     <div className='partners-container'>
                         <div className='partners-btn' onClick={showPartnersBtn}>
                             <span className='partners'>Parceiros</span>
-                            <span className="material-symbols-outlined" id="partnersArrow">arrow_drop_down</span>
+                            <ArrowDown id='partnersArrow'/>
                         </div>
 
                         {showPartners && (
