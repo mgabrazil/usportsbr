@@ -97,10 +97,17 @@
     }
 
     .contact-page-img{
+        &{
+            height: 80vh;
+            overflow: hidden;
+            z-index: 5;
+        }
         & img {
             position: relative;
-            top: 80px;
-            height: 85vh;
+            top: -100px;
+            transform: rotate(-18deg);
+            height: 120vh;
+            image-rendering: auto;
         }
     }
 }

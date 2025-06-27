@@ -9,6 +9,8 @@ import imagemMulher from '../../assets/img-woman-fita.png';
 import imagemHomemMulher from '../../assets/img-man-woman.png';
 import imagemPaginaContato from '../../assets/contact-page-img.png';
 
+import animacaoPaginaContato from '../../assets/contact-animation.gif';
+
 import logoLFF from '../../assets/LFF.png';
 import logoCBFS from '../../assets/CBFS_logo-07.png';
 import logoADEF from '../../assets/ADEF.png';
@@ -130,7 +132,7 @@ function Home() {
         </div>
 
         <div className='contact-page-img'>
-          <img src={imagemPaginaContato} alt='imagem-contato' />
+          <img src={animacaoPaginaContato} alt='imagem-contato' />
         </div>
 
       </section>
