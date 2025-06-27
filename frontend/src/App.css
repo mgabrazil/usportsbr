@@ -5,12 +5,12 @@
 
 body, html {
   position: relative;
-  background: linear-gradient(to bottom, #1D1D1B 53%, #ef7f2b 123%) !important;
+  background: linear-gradient(to bottom, var(--dark-grey) 53%, var(--orange) 123%) !important;
   background-repeat: no-repeat;
   background-attachment: fixed; /* importante */
   height: 100%;
   width: 100%;
-  color: #F7F6F5;
+  color: var(--white);
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
@@ -21,4 +21,14 @@ html {
 
 body {
     display: flex;
+}
+
+:root {
+  --orange: #ef7f2b;
+  --orange-hover: #ce6d22;
+  --white: #F7F6F5;
+  --light-grey: #333;
+  --grey: #222;
+  --dark-grey: #1D1D1B;
+  --black: #000;
 }

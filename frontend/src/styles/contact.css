@@ -17,9 +17,9 @@
     @media (max-width:480px) {
 
     .contact-section {
-        background: linear-gradient(to bottom, #1D1D1B 53%, #ef7f2b 123%);
+        background: linear-gradient(to bottom, var(--dark-grey) 53%, var(--orange) 123%);
         padding: 8vw 5vw;
-        color: #fff;
+        color: var(--white);
     }
 
     .contact-section h2 {
@@ -39,17 +39,17 @@
 
     .contact-section .input-label {
         font-size: 4vw;
-        color: #ef7f2b;
+        color: var(--orange);
         font-family: "Montserrat", sans-serif;
         margin-bottom: 1.5vw;
     }
 
     .contact-section .input-field,
     .contact-section .textarea-field {
-        background-color: #333;
+        background-color: var(--light-grey);
         border: none;
         border-radius: 1vw;
-        color: #fff;
+        color: var(--white);
         outline: none;
     }
 
@@ -67,8 +67,8 @@
 
     .contact-section .btn-submit {
         margin-top: 6vw;
-        background-color: #000;
-        color: #fff;
+        background-color: var(--black);
+        color: var(--white);
         border: none;
         border-radius: 2vw;
         padding: 4vw 6vw;
@@ -83,6 +83,6 @@
     }
 
     .contact-section .btn-submit:hover {
-        background-color: #222;
+        background-color: var(--grey);
     }
 }
