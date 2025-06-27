@@ -137,7 +137,7 @@ export default function PartnerCBFS(){
                                                 height: 300,
                                             },
                                             enlargedImagePosition: 'beside',
-                                            isHintEnabled: true,
+                                            isHintEnabled: false,
                                             shouldHideHintForTouchDevices: true,
                                             fadeDurationInMs: 250,
                                             hoverDelayInMs: 0, 
@@ -196,7 +196,9 @@ export default function PartnerCBFS(){
 
 
                 <div className="gradient-background">
+                    {/* IMAGEM DEGRADE COMENTADA
                     <img src={degrade} id="gradient-background-img"/>
+                    */}
                 </div>
 
             </div>

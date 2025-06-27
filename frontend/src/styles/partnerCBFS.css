@@ -148,6 +148,19 @@
 }
 
 .gradient-background{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--black) 55%, var(--orange) 120%);
+    opacity: 75%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+}
+
+/* CONFIGURAÇÕES IMAGEM GRADIENTE COMENTADA
+.gradient-background{
     &{
         display: flex;
         position: fixed;
@@ -163,3 +176,4 @@
         width: 100vw;
     }
 }
+*/
