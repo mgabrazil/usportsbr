@@ -113,19 +113,19 @@ function Home() {
           <form>
             <div className="input-group">
               <label htmlFor="nome" className="input-label">Nome</label>
-              <input type="text"   id="nome"    name="nome"    className="input-field" />
+              <input type="text"   id="nome"    name="nome"    className="input-field" maxLength={50} />
             </div>
             <div className="input-group">
               <label htmlFor="celular" className="input-label">Celular</label>
-              <input type="tel"    id="celular" name="celular" className="input-field" />
+              <input type="tel"    id="celular" name="celular" className="input-field" maxLength={15} />
             </div>
             <div className="input-group">
               <label htmlFor="email" className="input-label">Email</label>
-              <input type="email"  id="email"   name="email"   className="input-field" />
+              <input type="email"  id="email"   name="email"   className="input-field" maxLength={50} />
             </div>
             <div className="input-group textarea-container">
               <label htmlFor="mensagem" className="input-label">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" className="textarea-field"></textarea>
+              <textarea id="mensagem" name="mensagem" className="textarea-field" maxLength={1000} />
             </div>
             <button type="submit" className="btn-submit">Enviar Mensagem</button>
           </form>
