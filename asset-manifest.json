@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/usportsbr/static/css/main.d793b0cc.css",
-    "main.js": "/usportsbr/static/js/main.8806b406.js",
+    "main.css": "/usportsbr/static/css/main.8cc7a99c.css",
+    "main.js": "/usportsbr/static/js/main.90ad79f7.js",
+    "static/media/contact-animation.gif": "/usportsbr/static/media/contact-animation.d62f90ee7eba513bc5ed.gif",
     "static/media/CBFS_GOLA_POLO_1.jpg": "/usportsbr/static/media/CBFS_GOLA_POLO_1.626fa8a98ba0efafec4a.jpg",
     "static/media/CBFS_CAMISETA_2.jpg": "/usportsbr/static/media/CBFS_CAMISETA_2.4969db4b51ea3e96ebbb.jpg",
     "static/media/CBFS_CASACO_4.jpg": "/usportsbr/static/media/CBFS_CASACO_4.cb1bd057b076db1d441f.jpg",
@@ -11,6 +12,7 @@
     "static/media/CBFS_AMARELINHA.png": "/usportsbr/static/media/CBFS_AMARELINHA.211f65e7b808040c9d7c.png",
     "static/media/CBFS_CALÇA_TACTEL.png": "/usportsbr/static/media/CBFS_CALÇA_TACTEL.c29fa877be9b4f400ffa.png",
     "static/media/CBFS_CASACO.png": "/usportsbr/static/media/CBFS_CASACO.00277a7f00bbc599b598.png",
+    "static/media/contact-page-img.png": "/usportsbr/static/media/contact-page-img.e206befc67365ed99ffa.png",
     "static/media/CBFS_CAMISETA.png": "/usportsbr/static/media/CBFS_CAMISETA.728fa401024b38e8dff6.png",
     "static/media/CBFS_CORTA_VENTO.png": "/usportsbr/static/media/CBFS_CORTA_VENTO.0dc239af5d08438d30d4.png",
     "static/media/img-tshirt.png": "/usportsbr/static/media/img-tshirt.fa11b70442aa1cdf2224.png",
@@ -26,11 +28,11 @@
     "static/media/img-logo.png": "/usportsbr/static/media/img-logo.7e89ccf8146effb3a5f8.png",
     "static/media/img-whatsapp.png": "/usportsbr/static/media/img-whatsapp.1dd8ca2765f1f177ab22.png",
     "index.html": "/usportsbr/index.html",
-    "main.d793b0cc.css.map": "/usportsbr/static/css/main.d793b0cc.css.map",
-    "main.8806b406.js.map": "/usportsbr/static/js/main.8806b406.js.map"
+    "main.8cc7a99c.css.map": "/usportsbr/static/css/main.8cc7a99c.css.map",
+    "main.90ad79f7.js.map": "/usportsbr/static/js/main.90ad79f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d793b0cc.css",
-    "static/js/main.8806b406.js"
+    "static/css/main.8cc7a99c.css",
+    "static/js/main.90ad79f7.js"
   ]
 }
