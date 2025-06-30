@@ -16,6 +16,8 @@ import logoCBFS from '../../assets/CBFS_logo-07.png';
 import logoADEF from '../../assets/ADEF.png';
 import logoFutsal from '../../assets/SUB_17.png';
 
+import PartnersBottomBtn from '../../components/PartnersBottomBtn.js';
+
 import '../../styles/home2.css';
 import '../../styles/home.css';
 import '../../styles/contact.css';
@@ -91,6 +93,8 @@ function Home() {
           </section>
 
         </div>
+
+        <PartnersBottomBtn/>
 
         <section className='partners-bottom-menu'>  
               <div className="clientes-mobile">

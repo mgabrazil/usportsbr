@@ -15,8 +15,11 @@
     }
     }
 */
+
+
 @media screen and (min-width: 480px) {
-    
+
+
     .contact-section{
         display: flex;
         justify-content: space-evenly;
