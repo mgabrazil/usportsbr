@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/usportsbr/static/css/main.ce9d87d5.css",
-    "main.js": "/usportsbr/static/js/main.07f4aa26.js",
+    "main.css": "/usportsbr/static/css/main.8277b9a5.css",
+    "main.js": "/usportsbr/static/js/main.4eccd20a.js",
     "static/media/contact-animation.gif": "/usportsbr/static/media/contact-animation.d62f90ee7eba513bc5ed.gif",
     "static/media/CBFS_GOLA_POLO_1.jpg": "/usportsbr/static/media/CBFS_GOLA_POLO_1.626fa8a98ba0efafec4a.jpg",
     "static/media/CBFS_CAMISETA_2.jpg": "/usportsbr/static/media/CBFS_CAMISETA_2.4969db4b51ea3e96ebbb.jpg",
@@ -29,11 +29,11 @@
     "static/media/img-whatsapp.png": "/usportsbr/static/media/img-whatsapp.1dd8ca2765f1f177ab22.png",
     "index.html": "/usportsbr/index.html",
     "static/media/arrow_drop_down.svg": "/usportsbr/static/media/arrow_drop_down.72ae86160cf9f5aa3a89bbc60851d0a1.svg",
-    "main.ce9d87d5.css.map": "/usportsbr/static/css/main.ce9d87d5.css.map",
-    "main.07f4aa26.js.map": "/usportsbr/static/js/main.07f4aa26.js.map"
+    "main.8277b9a5.css.map": "/usportsbr/static/css/main.8277b9a5.css.map",
+    "main.4eccd20a.js.map": "/usportsbr/static/js/main.4eccd20a.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce9d87d5.css",
-    "static/js/main.07f4aa26.js"
+    "static/css/main.8277b9a5.css",
+    "static/js/main.4eccd20a.js"
   ]
 }
