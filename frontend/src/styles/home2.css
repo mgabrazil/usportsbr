@@ -3,7 +3,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .slider {
@@ -29,7 +29,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 95%;
   position: relative;
   overflow: hidden;
 }
@@ -88,7 +88,7 @@
 .caixa-texto {
   position: absolute;
   right: 6vw;
-  bottom: 5vw;
+  bottom: 6.5vw;
   text-align: left;
   z-index: 3;
 }
@@ -127,43 +127,42 @@ html, body {
 @media (max-width:1280px){ 
   .caixa-texto {
     position: absolute;
-    right: 2%;
-    bottom: 10%;
+    right: 1%;
+    bottom: 14%;
   }
 
   .titulo{
-    font-size: 3vw;
+    font-size: 2.1vw;
   }
 
   .subtitulo{
-    width: 350px;
+    width: 290px;
+    font-size: 1.1rem;
   }
 
   .homem {
     position: absolute;
-    top: 12%;
-    left: -22%;
+    top: 7%;
+    left: -15%;
     z-index: 2;
   }
   .homem img {
-    width: 90vw;
+    width: 85vw;
     height: auto;
   }
 
   .mulher {
     position: relative;
-    right: 26.7%;
-    top: -23vw;
+    right: 8%;
+    top: -16vw;
     z-index: 2;
   }
   .mulher img {
-    width: 160vw;
+    width: 140vw;
     height: auto;
   }
 
 }
-@media (max-width:1024px){ /* … */ }
-@media (max-width: 768px){ /* … */ }
 
 /* mobile slide 1 */
 @media (max-width: 480px) {
