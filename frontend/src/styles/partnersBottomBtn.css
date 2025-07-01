@@ -37,7 +37,39 @@
 }
 
 @media screen and (max-width: 480px) {
+
+
     .partners-bottom-desktop{
-        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--dark-grey);
+        margin: 0 0;
+        width: 100%;
+        height: 3rem;
+        border-radius: 50px;
+        filter: drop-shadow(5px 8px 10px rgba(0, 0, 0, 0.904));
+        position: relative;
+        top: -1.5rem;
     }
+
+    .partners-bottom-container{
+        width: 79%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logoPartnersImages{
+        height: 40px;
+        transition: scale 0.3s ease-in-out;
+    }
+    .logoPartnersImages:hover{
+        scale: 1.05;
+    }
+
+    #logo-image-lff{
+            height: 21px;
+    }
+
 }

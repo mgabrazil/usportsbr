@@ -194,13 +194,14 @@ html, body {
     width:60vw;
   }
 
+
   .clientes-mobile {
-    position:absolute;
-    bottom:14vw;
-    left:50%;
-    transform:translateX(-50%);
-    width:100%;
-    text-align:center;
+      position:absolute;
+      bottom:10vw;
+      left:50%;
+      transform:translateX(-50%);
+      width:100%;
+      text-align:center;
   }
 
   .btn-clientes-mobile {
@@ -210,33 +211,17 @@ html, body {
     outline: none;             
     border-radius: 0 20px 0 20px;
     padding: 4px 12px;
-    font-size: 3vw;
-    font-weight: 600;
-    margin-bottom: 6.5vw;
-    box-shadow: none;          
+    font-size: 3.0vw;
+    font-weight: 800;
+    box-shadow: none;  
+            
   }
 
 
   .logos-clientes {
-    position:absolute;
-    bottom:-118%;
-    left:-20px;
-    width:110%;
-    background:var(--dark-grey);
-    display:flex;
-    justify-content:center;
-    gap:10vw;
-    padding:2vw 0;
+    display: none;
   }
   .logo-lff   { 
-    position: relative;
-    bottom: -15px;
-    width:14.5vw; 
-    height:5vw;
-
+    display: none;
   }
-  .logo-cbfs  { height:13vw; }
-  .logo-adef  { height:13vw; }
-  .logo-futsal{ height:13vw; }
-  
 }
