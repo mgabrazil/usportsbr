@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import '../../styles/landing.css';
 
@@ -6,24 +7,23 @@ export default function Landing(){
 
     const formRef = useRef(null);
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
 
-        const formData = new FormData(formRef.current);
-
-        // https://seudominio.com/landingForm.php
-        try {
-            const response = await fetch("http://localhost:8000/landingForm.php", {
-                method: "POST",
-                body: formData,
-            });
-
-            const result = await response.text();
-            alert(result);
-            formRef.current.reset();
-        } catch (err) {
-            alert("Erro ao enviar: " + err.message);
-        }
+        emailjs.sendForm(
+            'service_nk4cijn' /*service_id do EMAILJS*/,
+            'template_yvovwwt' /* template_id do EMAILJS */,
+            formRef.current,
+            'ZuEFnHjNjzxdASMfj'/* public_key do EMAILJS */,
+        ).then(
+            (result) => {
+                alert("Mensagem enviada com sucesso!");
+                formRef.current.reset();
+            },
+            (error) => {
+                alert("Erro ao enviar: ", error.text);
+            }
+        );
     };
 
 
@@ -34,22 +34,22 @@ export default function Landing(){
                 <form ref={formRef} onSubmit={handleSubmit}>
 
                     <label>Nome da escola</label>
-                    <input name='escola' placeholder='Digite o nome da escola'/>
+                    <input name='escola' placeholder='Digite o nome da escola' required/>
 
                     <label>Cidade/Estado</label>
-                    <input name='cidade' placeholder='Cidade - UF'/>
+                    <input name='cidade' placeholder='Cidade - UF' required/>
 
                     <label>Nome do Responsável</label>
-                    <input name='responsavel' placeholder='Digite o nome do Responsável' />
+                    <input name='responsavel' placeholder='Digite o nome do Responsável' required />
 
                     <label>E-mail</label>
-                    <input name='email' placeholder='email@email.com' />
+                    <input name='email' placeholder='email@email.com' required />
 
                     <label>WhatsApp</label>
-                    <input name='whatsapp' placeholder='(00) 0 0000-0000' />
+                    <input name='whatsapp' placeholder='(00) 0 0000-0000' required />
 
                     <label>Número de alunos</label>
-                    <input name='quantidade' placeholder='Digite a quantidade de alunos' />
+                    <input name='quantidade' placeholder='Digite a quantidade de alunos' required />
 
                     <label>Mensagem (opcional)</label>
                     <input name='mensagem' placeholder='ex: "Gostaria de agendar uma reunião virtual"'/>
