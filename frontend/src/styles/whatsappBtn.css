@@ -19,7 +19,7 @@
 @media screen and (max-width: 1280px){
     .btn-whatsapp {
         & {
-            bottom: 11vh;
+            bottom: 15vh;
             right: 5vw;
             z-index: 999;
         }
@@ -39,6 +39,6 @@
     .btn-whatsapp img{
         position: relative;
         width: 3rem;
-        bottom: -170vw;
+        bottom: -180vw;
     }
 }

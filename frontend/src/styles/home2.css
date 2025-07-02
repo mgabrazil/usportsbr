@@ -170,7 +170,7 @@ html, body {
   .mulher img{ width:0; }
   .homem-mulher {
     display: flex;
-    top:11%;
+    top:14%;
     left:10vw;
   }
   .homem-mulher img {
@@ -197,7 +197,7 @@ html, body {
 
   .clientes-mobile {
       position:absolute;
-      bottom:10vw;
+      bottom:18vw;
       left:50%;
       transform:translateX(-50%);
       width:100%;

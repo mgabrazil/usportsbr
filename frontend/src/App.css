@@ -8,7 +8,7 @@ body, html {
   background: linear-gradient(to bottom, var(--dark-grey) 53%, var(--orange) 123%) !important;
   background-repeat: no-repeat;
   background-attachment: fixed; /* importante */
-  height: 100%;
+  height: 100vh;
   width: 100%;
   color: var(--white);
   font-family: "Montserrat", sans-serif;

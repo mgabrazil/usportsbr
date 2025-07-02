@@ -120,6 +120,7 @@
 @media screen and (max-width:480px) {
 
     .contact-section {
+        margin-top: -6vh;
         display: block;
         background: linear-gradient(to bottom, var(--dark-grey) 53%, var(--orange) 123%);
         padding: 8vw 5vw;
@@ -137,17 +138,21 @@
     }
 
     .form-container .input-group {
-        margin-bottom: 5vw;
+        margin-bottom: 4vw;
         display: flex;
         flex-direction: column;
     }
 
+    .form-container .textarea-container .input-label {
+        width: 100%;
+        text-align: center;
+    }
+
     .form-container .input-label {
-        font-size: 4vw;
+        font-size: 3.5vw; /* Fonte menor */
         font-weight: 600;
         color: var(--orange);
-        font-family: "Montserrat", sans-serif;
-        margin-bottom: 1.5vw;
+        margin-bottom: 2vw;
     }
 
     .form-container .input-field,
@@ -171,28 +176,76 @@
         resize: none;
     }
 
-    .form-container .btn-submit {
-        margin-top: 6vw;
-        background-color: var(--black);
-        color: var(--white);
-        border: none;
-        border-radius: 2vw;
-        padding: 4vw 6vw;
-        font-size: 4.5vw;
-        font-weight: 700;
-        width: 100%;
-        max-width: 60vw;
-        display: block;
-        margin: 0 auto;
-        cursor: pointer;
-        transition: background-color 0.2s ease-in-out;
-    }
-
-    .form-container .btn-submit:hover {
-        background-color: var(--grey);
-    }
-
     .contact-page-img{
         display: none;
     }
+
+    .form-container .textarea-container .input-label {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-container .textarea-container {
+        position: relative;
+        margin-top: 10vw;
+    }
+
+    .form-container .textarea-field {
+        padding-right: 15vw; 
+    }
+
+    .btn-send-icon {
+        position: absolute;
+        right: 3vw;
+        bottom: 3vw;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: var(--orange);
+        padding: 0;
+    }
+
+    .btn-send-icon .material-symbols-outlined {
+        font-size: 8vw;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .btn-send-icon:hover .material-symbols-outlined {
+        transform: scale(1.1);
+    }
+
+    .btn-send-icon::after {
+        content: 'Enviar Mensagem'; 
+        position: absolute;          
+        
+        top: 50%;
+        right: 100%;
+        transform: translateY(-50%);
+        margin-right: 10px; 
+
+        background-color: var(--black);
+        color: var(--white);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 3vw; 
+        font-weight: 600;
+        white-space: nowrap; 
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none; 
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .btn-send-icon:hover::after {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .contact-section::after {
+        content: '';
+        display: block;
+        height: 15vh; 
+    }
+
 }

@@ -130,8 +130,11 @@ function Home() {
             <div className="input-group textarea-container">
               <label htmlFor="mensagem" className="input-label">Mensagem</label>
               <textarea id="mensagem" name="mensagem" className="textarea-field" maxLength={1000} />
+              <button type="submit" className="btn-send-icon" aria-label="Enviar Mensagem">
+                <span className="material-symbols-outlined">send</span>
+              </button>
             </div>
-            <button type="submit" className="btn-submit">Enviar Mensagem</button>
+            
           </form>
         </div>
 
