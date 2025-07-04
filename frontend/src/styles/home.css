@@ -59,7 +59,7 @@
 
 #left-arrow {
     position:absolute;
-    top: 25vw;
+    top: 50%;
     font-size:60px;
     transform:rotate(180deg);
     cursor:pointer;
@@ -70,7 +70,8 @@
 
     #right-arrow {
     position:absolute;
-    top: 25vw;
+    top: 50%;
+    margin-right: 1%;
     font-size:60px;
     right:0;
     cursor:pointer;

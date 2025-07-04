@@ -18,6 +18,18 @@
   position: relative;
 }
 
+#right-arrow-2 {
+  position:absolute;
+  font-size:60px;
+  margin-right: 1%;
+  top: 52.5%;
+  right:0;
+  cursor:pointer;
+  z-index:10;
+}
+
+#right-arrow-2:hover { transform:scale(1.1); }
+
 .home2-container {
   position: relative;
   width: 100vw;
