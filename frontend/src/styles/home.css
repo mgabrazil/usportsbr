@@ -207,7 +207,7 @@
 
     #left-arrow {
         position:absolute;
-        top: 45%;
+        top: 50%;
         font-size:60px;
         transform:rotate(180deg);
         cursor:pointer;
@@ -219,7 +219,7 @@
     #right-arrow {
         position:absolute;
         font-size:60px;
-        top: 45%;
+        top: 50%;
         right:0;
         cursor:pointer;
         z-index:10;
