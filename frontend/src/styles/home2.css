@@ -224,6 +224,15 @@ html, body {
   .logo-lff   { 
     display: none;
   }
-
+  
+  #right-arrow-2 {
+        position:absolute;
+        font-size:60px;
+        top: 52.5%;
+        right:0;
+        cursor:pointer;
+        z-index:10;
+    }
+    #right-arrow-2:hover { transform:scale(1.1); }
 
 }

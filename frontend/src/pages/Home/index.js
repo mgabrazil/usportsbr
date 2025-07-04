@@ -45,7 +45,7 @@ function Home() {
             <main>
               <span
                 className="material-symbols-outlined"
-                id="right-arrow"
+                id="right-arrow-2"
                 onClick={showNext}
               >double_arrow</span>
               <div className="container-imagens">
