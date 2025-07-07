@@ -94,6 +94,7 @@
         cursor: pointer;
         color: var(--white);
         padding: 0;
+        filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.5));
     }
 
     .btn-send-icon .material-symbols-outlined {
@@ -102,26 +103,27 @@
     }
 
     .btn-send-icon:hover .material-symbols-outlined {
-        transform: scale(1.1);
+        transform: scale(1.15);
         color: var(--orange);
     }
 
     .btn-send-icon::after {
         content: 'Enviar Mensagem';
         position: absolute;
-        top: 50%;
-        right: 110%; 
+        top: 45%;
+        right: 130%; 
         transform: translateY(-50%);
-        background-color: var(--black);
+        background-color: var(--light-grey);
         color: var(--white);
         padding: 6px 12px;
         border-radius: 5px;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 600;
         white-space: nowrap;
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
         transition: opacity 0.3s ease, visibility 0.3s ease;
     }
 
@@ -254,17 +256,17 @@
         transform: translateY(-50%);
         margin-right: 10px; 
 
-        background-color: var(--black);
+        background-color: var(--light-grey);
         color: var(--white);
         padding: 5px 10px;
         border-radius: 5px;
         font-size: 3vw; 
         font-weight: 600;
         white-space: nowrap; 
-
         opacity: 0;
         visibility: hidden;
         pointer-events: none; 
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.6));
         transition: opacity 0.3s ease, visibility 0.3s ease;
     }
 
