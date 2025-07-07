@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/usportsbr/static/css/main.c75c0514.css",
-    "main.js": "/usportsbr/static/js/main.6a02f317.js",
+    "main.css": "/usportsbr/static/css/main.1de6f442.css",
+    "main.js": "/usportsbr/static/js/main.d5da8d54.js",
     "static/media/contact-animation.gif": "/usportsbr/static/media/contact-animation.d62f90ee7eba513bc5ed.gif",
     "static/media/CBFS_GOLA_POLO_1.jpg": "/usportsbr/static/media/CBFS_GOLA_POLO_1.626fa8a98ba0efafec4a.jpg",
     "static/media/CBFS_CAMISETA_2.jpg": "/usportsbr/static/media/CBFS_CAMISETA_2.4969db4b51ea3e96ebbb.jpg",
@@ -12,7 +12,6 @@
     "static/media/CBFS_AMARELINHA.png": "/usportsbr/static/media/CBFS_AMARELINHA.211f65e7b808040c9d7c.png",
     "static/media/CBFS_CALÇA_TACTEL.png": "/usportsbr/static/media/CBFS_CALÇA_TACTEL.c29fa877be9b4f400ffa.png",
     "static/media/CBFS_CASACO.png": "/usportsbr/static/media/CBFS_CASACO.00277a7f00bbc599b598.png",
-    "static/media/contact-page-img.png": "/usportsbr/static/media/contact-page-img.e206befc67365ed99ffa.png",
     "static/media/CBFS_CAMISETA.png": "/usportsbr/static/media/CBFS_CAMISETA.728fa401024b38e8dff6.png",
     "static/media/CBFS_CORTA_VENTO.png": "/usportsbr/static/media/CBFS_CORTA_VENTO.0dc239af5d08438d30d4.png",
     "static/media/img-tshirt.png": "/usportsbr/static/media/img-tshirt.fa11b70442aa1cdf2224.png",
@@ -29,11 +28,11 @@
     "static/media/img-whatsapp.png": "/usportsbr/static/media/img-whatsapp.1dd8ca2765f1f177ab22.png",
     "index.html": "/usportsbr/index.html",
     "static/media/arrow_drop_down.svg": "/usportsbr/static/media/arrow_drop_down.72ae86160cf9f5aa3a89bbc60851d0a1.svg",
-    "main.c75c0514.css.map": "/usportsbr/static/css/main.c75c0514.css.map",
-    "main.6a02f317.js.map": "/usportsbr/static/js/main.6a02f317.js.map"
+    "main.1de6f442.css.map": "/usportsbr/static/css/main.1de6f442.css.map",
+    "main.d5da8d54.js.map": "/usportsbr/static/js/main.d5da8d54.js.map"
   },
   "entrypoints": [
-    "static/css/main.c75c0514.css",
-    "static/js/main.6a02f317.js"
+    "static/css/main.1de6f442.css",
+    "static/js/main.d5da8d54.js"
   ]
 }
