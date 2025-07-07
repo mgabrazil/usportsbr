@@ -17,8 +17,9 @@
 */
 
 
-@media screen and (min-width: 480px) {
+/* cole isso no seu contact.css, substituindo o @media para min-width: 480px existente */
 
+@media screen and (min-width: 480px) {
 
     .contact-section{
         display: flex;
@@ -68,7 +69,7 @@
         }
         & .textarea-container{
             margin-top: 25px;
-            align-items: center;
+            position: relative; /* Essencial para posicionar o botão dentro */
         }
         & textarea{
             margin-top: 5px;
@@ -78,25 +79,55 @@
             background-color: var(--light-grey);
             height: 7rem;
             border-radius: 10px;
-            padding: 10px;
-            width: calc(100% - 20px);
+            padding: 10px 50px 10px 10px; /* Adiciona espaço à direita para o botão */
+            width: calc(100% - 60px); /* Ajusta a largura */
             resize: none;
         }
-        & button{
-            color: var(--white);
-            border: none;
-            margin-top: 15px;
-            border-radius: 10px;
-            padding: 10px;
-            width: 100%;
-            background-color: var(--dark-grey);
-            transition: 0.3s ease-in-out;
-            cursor: pointer;
-        }
-        & button:hover{
-            background-color: var(--black);
-            color: var(--orange);
-        }
+    }
+
+    .btn-send-icon {
+        position: absolute;
+        right: 15px;
+        bottom: 12px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: var(--white);
+        padding: 0;
+    }
+
+    .btn-send-icon .material-symbols-outlined {
+        font-size: 32px;
+        transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+
+    .btn-send-icon:hover .material-symbols-outlined {
+        transform: scale(1.1);
+        color: var(--orange);
+    }
+
+    .btn-send-icon::after {
+        content: 'Enviar Mensagem';
+        position: absolute;
+        top: 50%;
+        right: 110%; 
+        transform: translateY(-50%);
+        background-color: var(--black);
+        color: var(--white);
+        padding: 6px 12px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .btn-send-icon:hover::after {
+        opacity: 1;
+        visibility: visible;
     }
 
     .contact-page-img{
@@ -149,7 +180,7 @@
     }
 
     .form-container .input-label {
-        font-size: 3.5vw; /* Fonte menor */
+        font-size: 3.5vw; 
         font-weight: 600;
         color: var(--orange);
         margin-bottom: 2vw;
@@ -201,7 +232,7 @@
         background: transparent;
         border: none;
         cursor: pointer;
-        color: var(--orange);
+        color: var(--white);
         padding: 0;
     }
 
