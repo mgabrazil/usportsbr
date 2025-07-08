@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/usportsbr/static/css/main.b8f4f08f.css",
-    "main.js": "/usportsbr/static/js/main.411ce76e.js",
+    "main.js": "/usportsbr/static/js/main.d5da8d54.js",
     "static/media/contact-animation.gif": "/usportsbr/static/media/contact-animation.d62f90ee7eba513bc5ed.gif",
     "static/media/CBFS_GOLA_POLO_1.jpg": "/usportsbr/static/media/CBFS_GOLA_POLO_1.626fa8a98ba0efafec4a.jpg",
     "static/media/CBFS_CAMISETA_2.jpg": "/usportsbr/static/media/CBFS_CAMISETA_2.4969db4b51ea3e96ebbb.jpg",
@@ -29,10 +29,10 @@
     "index.html": "/usportsbr/index.html",
     "static/media/arrow_drop_down.svg": "/usportsbr/static/media/arrow_drop_down.72ae86160cf9f5aa3a89bbc60851d0a1.svg",
     "main.b8f4f08f.css.map": "/usportsbr/static/css/main.b8f4f08f.css.map",
-    "main.411ce76e.js.map": "/usportsbr/static/js/main.411ce76e.js.map"
+    "main.d5da8d54.js.map": "/usportsbr/static/js/main.d5da8d54.js.map"
   },
   "entrypoints": [
     "static/css/main.b8f4f08f.css",
-    "static/js/main.411ce76e.js"
+    "static/js/main.d5da8d54.js"
   ]
 }
