@@ -231,7 +231,7 @@
 @media (max-width: 390px) {
 
     .home1-container .btn-price {
-        position:absolute; bottom:2.3rem; left:5%;
+        position:absolute; bottom:0rem; left:5%;
         font-size:3vw; padding:6px 20px;
         box-shadow:0 3px 15px rgba(0,0,0,0.5);
     }
@@ -239,19 +239,19 @@
     .home1-container .title-top {
         position:absolute; 
         left:5%; 
-        top:65%;
+        top:73%;
         padding:0 5px;
     }
     .home1-container .title-bottom {
         position:absolute; 
         left: 5%; 
-        top: 72%;
+        top: 80%;
         padding:0 5px;
     }
 
     .home1-container .phrase-container {
         position:absolute; 
-        bottom:20vw; 
+        bottom:10.5vw; 
         left:5.5%;
         font-size:3.5vw; 
         line-height:1.2;
@@ -271,5 +271,6 @@
         position: relative;
         top: 30px;
     }
+
 }
 

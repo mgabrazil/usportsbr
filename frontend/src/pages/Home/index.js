@@ -25,7 +25,7 @@ function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setCurrentPage(prev => (prev === 1 ? 2 : 1));
-    }, 150000);
+    }, 15000);
     return () => clearTimeout(timer);
   }, [currentPage]);
   const showPrevious = () => setCurrentPage(1);

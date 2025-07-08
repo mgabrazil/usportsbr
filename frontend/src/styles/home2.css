@@ -253,7 +253,7 @@ html, body {
 
   .clientes-mobile {
       position:absolute;
-      bottom:30vw;
+      bottom:31vw;
       left:50%;
       transform:translateX(-50%);
       width:100%;
