@@ -248,3 +248,42 @@ html, body {
     #right-arrow-2:hover { transform:scale(1.1); }
 
 }
+
+@media (max-width: 390px) {
+
+  .clientes-mobile {
+      position:absolute;
+      bottom:30vw;
+      left:50%;
+      transform:translateX(-50%);
+      width:100%;
+      text-align:center;
+  }
+
+  .homem-mulher {
+    display: flex;
+    top:9%;
+    left:11vw;
+  }
+  .homem-mulher img {
+    width:210vw; 
+    object-fit:cover;
+
+  }
+
+  .caixa-texto {
+    position: absolute;
+    right:33%;
+    top:19%;
+    text-align:left;
+  }
+  .titulo {
+    padding:2px 3px;
+    font-size:6vw;
+  }
+  .subtitulo {
+    font-size:3.9vw;
+    width:60vw;
+  }
+
+}

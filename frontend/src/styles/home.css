@@ -227,3 +227,49 @@
     }
     #right-arrow:hover { transform:scale(1.1); }
 }
+
+@media (max-width: 390px) {
+
+    .home1-container .btn-price {
+        position:absolute; bottom:2.3rem; left:5%;
+        font-size:3vw; padding:6px 20px;
+        box-shadow:0 3px 15px rgba(0,0,0,0.5);
+    }
+
+    .home1-container .title-top {
+        position:absolute; 
+        left:5%; 
+        top:65%;
+        padding:0 5px;
+    }
+    .home1-container .title-bottom {
+        position:absolute; 
+        left: 5%; 
+        top: 72%;
+        padding:0 5px;
+    }
+
+    .home1-container .phrase-container {
+        position:absolute; 
+        bottom:20vw; 
+        left:5.5%;
+        font-size:3.5vw; 
+        line-height:1.2;
+        text-align:left;
+    }
+
+    .home1-container .tshirt img {
+        position:relative;
+        top:-30px;
+        left:15px;
+        height:125vw;
+        animation:float 3s ease-in-out infinite;
+    }
+
+
+    .body-container {
+        position: relative;
+        top: 30px;
+    }
+}
+
