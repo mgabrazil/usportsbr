@@ -286,10 +286,10 @@
 @media (max-width: 390px) {
 
     .contact-section {
-        margin-top: -12vh;
+        margin-top: -13vh;
         display: block;
         background: linear-gradient(to bottom, var(--dark-grey) 53%, var(--orange) 123%);
-        padding: 8vw 5vw;
+        padding: 12vw 5vw;
         color: var(--white);
     }
 

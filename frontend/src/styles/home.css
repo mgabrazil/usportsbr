@@ -13,7 +13,7 @@
         top: -120px;
         left: -20px;
         height: 57vw;
-        animation: float 3s ease-in-out infinite;
+        animation: float 2.2s ease-in-out infinite;
     }
 }
 
@@ -134,7 +134,7 @@
         top:-55px;
         left:15px;
         height:125vw;
-        animation:float 3s ease-in-out infinite;
+        animation:float 2s ease-in-out infinite;
     }
     .home1-container .text-container {
         display:flex;
@@ -263,7 +263,7 @@
         top:-30px;
         left:15px;
         height:125vw;
-        animation:float 3s ease-in-out infinite;
+        animation:float 2s ease-in-out infinite;
     }
 
 

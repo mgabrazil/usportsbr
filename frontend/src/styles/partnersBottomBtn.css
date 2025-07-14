@@ -28,7 +28,7 @@
         transition: scale 0.3s ease-in-out;
     }
     .logoPartnersImages:hover{
-        scale: 1.05;
+        scale: 1.15;
     }
 
     #logo-image-lff{
@@ -87,7 +87,7 @@
         border-radius: 50px;
         filter: drop-shadow(5px 8px 10px rgba(0, 0, 0, 0.904));
         position: relative;
-        top: -6.7rem;
+        top: -7.7rem;
     }
 
 }
